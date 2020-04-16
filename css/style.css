@@ -95,9 +95,8 @@ body {
 
 .section2 {
   background-image: url('../img/dezinfekcija_s2.jpg');
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 .section2__image {
@@ -254,6 +253,11 @@ body {
     font-size: 40px;
   }
 
+  .section2 {
+    background-size: 100% 100%;
+  }
+
+
   .section3__image {
     width: 200px;
     height: 200px;
@@ -361,9 +365,7 @@ body {
   .section4__tex2 {
     font-size: 14px;
     margin: 0px 0px 20px;
-
   }
-
 }
 
 @media (max-width: 320px) {
@@ -389,8 +391,4 @@ body {
   .section2__image {
     margin: 10px 30px;
   }
-
-
-
-
 }
