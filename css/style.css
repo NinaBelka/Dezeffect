@@ -203,13 +203,14 @@ body {
 }
 
 .section4 {
-  background-color: rgba(22, 178, 218, 0.993)
+  background-color: rgba(22, 178, 218, 0.993);
 }
 
 .section4__container {
   width: 90%;
   margin: auto;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -223,7 +224,7 @@ body {
 }
 
 .section4__tex2 {
-  width: 70%;
+  width: 70em;
   margin-left: 40px;
   font-size: 24px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
