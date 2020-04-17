@@ -473,6 +473,7 @@
 
   .section1__container {
     justify-content: center;
+    padding: 20px 10px;
   }
 
   .section1__image {
@@ -531,7 +532,6 @@
     font-size: 16px;
     line-height: 24px;
   }
-
 
   .section1__image {
     width: 230px;
