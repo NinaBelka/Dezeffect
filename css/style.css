@@ -65,8 +65,8 @@
 
 /* Преимущества */
 .section {
-  background: rgb(14, 53, 107);
-  background: linear-gradient(0deg, rgba(14, 53, 107, 1) 0%, rgba(27, 158, 227, 0.15683368073792014) 51%, rgba(0, 255, 236, 0.13442471715248594) 100%);
+    background: rgb(14, 53, 107);
+    background: linear-gradient(180deg, rgba(14, 53, 107, 1) 0%, rgba(27, 158, 227, 0.15683368073792014) 51%, rgba(0, 255, 236, 0.13442471715248594) 100%);
 }
 
 .section__container {
@@ -100,7 +100,8 @@
 
 .section1 {
   background: rgb(14, 53, 107);
-  background: linear-gradient(180deg, rgba(14, 53, 107, 1) 0%, rgba(27, 158, 227, 0.15683368073792014) 51%, rgba(0, 255, 236, 0.13442471715248594) 100%);
+  background: linear-gradient(0deg, rgba(14, 53, 107, 1) 0%, rgba(27, 158, 227, 0.15683368073792014) 51%, rgba(0, 255, 236, 0.13442471715248594) 100%);
+
 }
 
 .section__title1 {
@@ -301,6 +302,32 @@
 
 /* Секция 5 */
 
+
+/* Footer */
+.footer {
+  background-color: blue;
+}
+.footer__contacts {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  padding: 20px 0px;
+}
+
+.footer__cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  width: 32px;
+  margin-right: 10px;
+}
 @media (max-width: 980px) {
 
   .header__name {
