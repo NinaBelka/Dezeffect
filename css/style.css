@@ -108,7 +108,7 @@
   text-align: center;
   font-size: 44px;
   margin: 0;
-  padding: 40px 0px;
+  padding: 40px 0px 20px;
 }
 
 .section1__container {
@@ -118,7 +118,6 @@
   justify-content: space-between;
   padding: 0px 40px 40px;
   margin-right: 40px;
-
 }
 
 .section__block {
@@ -176,7 +175,7 @@
   text-align: center;
   font-size: 24px;
   margin: 0;
-  padding: 40px 0px 40px;
+  padding: 20px 0px 40px;
 }
 
 .section2__container {
@@ -196,69 +195,26 @@
 
 .section3__container {
   color: white;
-  width: 80%;
+  width: 85%;
   margin: auto;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-areas: "block1 block1-text block1-text"
-    "block2-text block2-text block2"
-    "block3 block3-text block3-text"
-    "block4-text block4-text block4"
-    "block5 block5-text block5-text"
-    "block6-text block6-text block6";
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  align-items: center;
   font-size: 24px;
   line-height: 32px;
+  padding-bottom: 40px;
 }
 
-.block1 {
-  grid-area: block1;
-}
-
-.block1-text {
-  grid-area: block1-text;
-}
-
-.block2 {
-  grid-area: block2;
-}
-
-.block2-text {
-  grid-area: block2-text;
-}
-
-.block3 {
-  grid-area: block3;
-}
-
-.block3-text {
-  grid-area: block3-text;
-}
-
-.block4 {
-  grid-area: block4;
-}
-
-.block4-text {
-  grid-area: block4-text;
-}
-
+.block1,
+.block3,
 .block5 {
-  grid-area: block5;
+  float: left;
+  margin-top: 20px;
+  margin-right: 40px;
 }
 
-.block5-text {
-  grid-area: block5-text;
-}
-
+.block2,
+.block4,
 .block6 {
-  grid-area: block6;
-}
-
-.block6-text {
-  grid-area: block6-text;
+  float: right;
+  margin-left: 40px;
 }
 
 .section3__image {
@@ -271,6 +227,9 @@
   -moz-border-radius: 25%;
   -ms-border-radius: 25%;
   -o-border-radius: 25%;
+}
+.section3__text2 {
+  width: auto;
 }
 
 /* Секция 4 */
@@ -397,15 +356,14 @@
     margin-right: 5px;
   }
 
-
 }
 
 @media (max-width: 768px) {
 
-.logo {
-  font-size: 36px;
-  padding-bottom: 20px;
-}
+  .logo {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
 
   .header__block {
     height: 300px;
@@ -436,7 +394,6 @@
   .section4__text2 {
     width: 20em;
   }
-
 
 }
 
@@ -546,4 +503,5 @@
   .section2__image {
     margin: 10px 30px;
   }
+
 }
