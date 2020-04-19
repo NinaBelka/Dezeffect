@@ -503,5 +503,14 @@
   .section2__image {
     margin: 10px 30px;
   }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6 {
+    float: none;
+    margin: 0;
+  }
 
 }
