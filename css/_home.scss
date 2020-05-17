@@ -1,0 +1,338 @@
+// Шапка 
+.nav {
+  background: #323925;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    padding: 1rem 0;
+    color: rgba(255, 255, 255, 0.8);
+
+    .logo {
+      width: 20rem;
+    }
+
+    .links {
+      margin-top: 3rem;
+
+      .header-link {
+        margin-right: 2rem;
+        text-decoration: none;
+        font-style: normal;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .contacts {
+      text-align: right;
+      margin-top: 2rem;
+      font-style: normal;
+    }
+
+  }
+
+  .menu-burger {
+    display: none;
+    margin-top: 2rem;
+
+    span {
+      display: block;
+      width: 2.5rem;
+      height: 0.2rem;
+      margin-bottom: 0.5rem;
+      background-color: white;
+    }
+  }
+}
+
+// Титульный блок
+.header-block {
+  height: 100vh;
+  background: url(../img/title.jpg) rgba(0, 0, 0, 0.45);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 6rem;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 40rem 0;
+}
+
+// Виды работ
+.types-of-works {
+  background: #9BAC81;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.4rem;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 10rem 0 8rem;
+}
+
+.work-container {
+  background: #EBE5CA;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10rem;
+  padding: 5rem;
+
+  .work-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    .icon {
+      width: 10rem;
+      height: 10rem;
+      margin-right: 4rem;
+    }
+
+    .types-of-jobs-text {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 3rem;
+      color: #000000;
+      text-align: left;
+    }
+  }
+}
+
+
+// Для кого мы работаем
+.for-who {
+  background: linear-gradient(180deg, rgba(50, 57, 37, 0.5) 0%, rgba(139, 146, 139, 0.31) 52.03%, #DDE3E9 100%);
+
+  .who-container {
+    display: flex;
+
+    .who-card1,
+    .who-card2,
+    .who-card3,
+    .who-card4,
+    .who-card5,
+    .who-card6,
+    .who-card7,
+    .who-card8,
+    .who-card9,
+    .who-card10,
+    .who-card11,
+    .who-card12 {
+      width: 25%;
+      height: 35rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-blend-mode: darken;
+      background-size: contain;
+
+      .card-text {
+        position: absolute;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        text-align: center;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// Наши преимущества
+.our-advantages {
+  background: #9BAC81;
+  padding-bottom: 10rem;
+
+  .advantages-discount {
+    display: flex;
+    justify-content: space-between;
+
+    .advantages {
+      background: #EBE5CA;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 4rem 9.5rem 6.5rem 3.5rem;
+
+      .advantage {
+        display: flex;
+        margin-bottom: 5rem;
+
+        .advantages-text {
+          display: inline-block;
+          font-style: normal;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .discount {
+    background: url(../img/discount.jpg) rgba(0, 0, 0, 0.45) center center no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem 3rem 13rem;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    .discount-title {
+      font-weight: bold;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 12rem;
+    }
+
+    .discount-text {
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      text-align: end;
+
+      span {
+        display: block;
+        font-size: 3.6rem;
+        line-height: 5.3rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+// Наши клиенты
+.customers {
+  background-image: url(../img/title_1.png);
+  background-size: cover;
+}
+
+.customer-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  .customer {
+    width: 30rem;
+    height: 8rem;
+    margin-right: 5rem;
+  }
+}
+
+// Подвал
+
+
+
+@media (max-width: 1200px) {
+  .nav {
+
+    .nav-container {
+      font-size: 1.2rem;
+
+      .logo {
+        width: 15rem;
+      }
+
+      .links {
+        margin-top: 2rem;
+
+        .header-link {
+          margin-right: 1rem;
+        }
+      }
+
+      .contacts {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  .nav {
+    font-size: 1rem;
+    padding: 1rem 0;
+
+    .logo {
+      width: 15rem;
+    }
+
+    .links {
+      display: none;
+    }
+
+    .contacts {
+      margin-top: 1rem;
+    }
+
+    .menu-burger {
+      display: block;
+    }
+  }
+
+  .header-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .nav {
+    font-size: 1rem;
+    padding: 1rem 0;
+
+    .nav-container {
+      width: 95%;
+
+      .logo {
+        width: 12rem;
+      }
+
+      .contacts {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+      }
+
+      .menu-burger {
+        display: block;
+      }
+    }
+  }
+
+  .header-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

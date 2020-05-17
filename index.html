@@ -5,377 +5,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
-    href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Dezeffect</title>
+  <title>Дезэффект</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav class="header__nav">
-      <div class="header__name logo"> эффект </div>
-      <div class="header__menu">
-        <ul class="header__links">
-          <li> <a href="#s1_title" class="header__link"> НАШИ ПРЕИМУЩЕСТВА </a>
-          </li>
-          <li><a href="#s2_title" class="header__link"> ПОМЕЩЕНИЯ </a></li>
-          <li><a href="#s3_title" class="header__link"> РАБОТЫ </a></li>
-          <li><a href="#f_title" class="header__link"> КОНТАКТЫ </a></li>
-        </ul>
+  <nav class="nav">
+    <div class="nav-container">
+      <img class="logo" src="./img/logo.png" alt="logo">
+      <div class="links">
+        <a href="#s1_title" class="header-link"> Виды работ </a>
+        <a href="#s2_title" class="header-link"> Помещения </a>
+        <a href="#s3_title" class="header-link"> Наши преимущества
+        </a>
+        <a href="#s4_title" class="header-link"> Наши клиенты </a>
       </div>
-      <div class="header__tel">
-        <div class="header__tel1"> +375 29 444 44 44 </div>
-        <div class="header__tel1"> +375 29 777 77 77 </div>
+      <div class="contacts">
+        <div class="email"> deseffect@gmail.com </div>
+        <div class="tel"> +375 29 777 77 77 </div>
       </div>
-    </nav>
-    <div class="header__block">
-      <div class="header__text">Комплексные решения в борьбе с вредителями
+      <div class="menu-burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </nav>
 
-  </header>
+  <div class="header-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+          <h1 class="header-text"> Комплексные решения <br> в борьбе с
+            вредителями
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main>
-    <section class="section">
-      <div class="section__container">
-        <h2 class="section__title1" id="s1_title"> Наши преимущества: </h2>
-        <ul class="section__list">
-          <li class="section__paragraph"> Мы используем только профессиональные
-            средства, которые нельзя приобрести без лицензии </li>
-          <li class="section__paragraph"> Мы предлагаем полный комплекс работ по
-            защите вашего объекта от всех видов вредителей </li>
-          <li class="section__paragraph"> Мы используем только современное
-            оборудование </li>
-          <li class="section__paragraph"> Мы работаем без выходных и в любое
-            время
-          </li>
-          <li class="section__paragraph"> Все виды работ проводятся только в
-            соответствии с санитарными правилами </li>
-          <li class="section__paragraph">Вся ответственность за проведенную
-            работу
-            ложится на нашу компанию</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section1">
-      <h2 class="section__title1" id="s2_title"> С какими помещениями мы
-        работаем: </h2>
-      <div class="section1__container">
-        <div class="section1__block">
-          <img class="section1__image" src="./img/office.jpg" alt="Office"
-            class="section1__image">
-          <div class="section__text"> Офисные помещения </div>
+    <section class="types-of-works">
+      <h2 class="title" id="s1_title"> Виды работ: </h2>
+      <div class="work-container">
+        <div class="work-block1">
+          <div class="work-block">
+            <img class="icon" src="./img/virus.png" alt="virus">
+            <div class="types-of-jobs-text"> Дезинфекция помещений</div>
+          </div>
+          <div class="work-block">
+            <img class="icon" src="./img/bird.png" alt="bird">
+            <div class="types-of-jobs-text"> Орнитологическая безопасность
+            </div>
+          </div>
+          <div class="work-block">
+            <img class="icon" src="./img/cockroach.png" alt="cockroach">
+            <div class="types-of-jobs-text"> Дезинcекция помещений</div>
+          </div>
         </div>
-        <div class="section1__block">
-          <img class="section1__image" src="./img/shop.jpg" alt="Shop"
-            class="section1__image">
-          <div class="section__text"> Торговые помещения </div>
-        </div>
-        <div class="section1__block">
-          <img class="section1__image" src="./img/cafe.jpg" alt="Cafe"
-            class="section1__image">
-          <div class="section__text"> Рестораны и кафе </div>
-        </div>
-
-        <div class="section1__block">
-          <img class="section1__image" src="./img/work.jpg" alt="Work"
-            class="section1__image">
-          <div class="section__text"> Производственные помещения </div>
-        </div>
-        <div class="section1__block">
-          <img class="section1__image" src="./img/warehouse.jpg" alt="Warehouse"
-            class="section1__image">
-          <div class="section__text"> Складские помещения </div>
-        </div>
-
-        <div class="section1__block">
-          <img class="section1__image" src="./img/apartment.jpg" alt="Apartment"
-            class="section1__image">
-          <div class="section__text"> Жилые помещения </div>
+        <div class="work-blocks2">
+          <div class="work-block">
+            <img class="icon" src="./img/deo.png" alt="deo">
+            <div class="types-of-jobs-text"> Дезодорация помещений</div>
+          </div>
+          <div class="work-block">
+            <img class="icon" src="./img/rat.svg" alt="mouse">
+            <div class="types-of-jobs-text"> Дератизация помещений </div>
+          </div>
+          <div class="work-block">
+            <img class="icon" src="./img/bug1.png" alt="bug">
+            <div class="types-of-jobs-text"> Обработка участков <br> и сада от
+              вредителей </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section2">
-      <h2 class="section__title1" id="s3_title"> Дезинфекция помещений </h2>
-      <h3 class="section__title2"> Объемное устранение вирусов, бактерий,
-        грибков
-      </h3>
+    <section class="for-who">
 
-      <div class="section2__container">
-        <div class="section__block">
-          <img src="./img/virus.jpg" alt="virus" class="section2__image">
-          <div class="section__text"> Вирусы </div>
-        </div>
-        <div class="section__block">
-          <img src="./img/bacteria.jpg" alt="bacteria" class="section2__image">
-          <div class="section__text"> Бактерии </div>
-        </div>
-        <div class="section__block">
-          <img src="./img/Gribok.jpg" alt="Gribok" class="section2__image">
-          <div class="section__text"> Грибки </div>
-        </div>
+      <h2 class="title" id="s2_title"> Для юридических лиц: </h2>
 
+      <div class="who-container">
+        <div class="who-card1"
+          style="background: url(./img/shop.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Магазины </div>
+        </div>
+        <div class="who-card2"
+          style="background: url(./img/cafe.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Рестораны, <br> кафе, бары </div>
+        </div>
+        <div class="who-card3"
+          style="background: url(./img/warehouse.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Склады <br> и производства </div>
+        </div>
+        <div class="who-card4"
+          style="background: url(./img/hotel.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Санатории <br> и гостиницы </div>
+        </div>
       </div>
-      </h3>
-    </section>
-    <section class="section3">
-      <h2 class="section__title1"> Дезинсекция помещений </h2>
-      <h3 class="section__title2"> Устранение всех видов нежелательных насекомых
-      </h3>
 
-      <div class="section3__container">
-
-        <div class="section3__text2 block1-text">
-          <div class="section__block block1">
-            <img src="./img/cockroach.jpg" alt="cockroach"
-              class="section3__image image">
-            <div class="section__text"> Тараканы </div>
-          </div>
-          Членистоногие являются
-          переносчиками возбудителей инфекционных заболеваний
-          человека, вызывают кожные и аллергические реакции и наносят
-          экономический ущерб. Нежелательные насекомые распространены
-          повсеместно, их можно разделить на следующие группы:
-          <br>
-          <br>
-          -- бытовые (тараканы, мухи, клопы, блохи, вши, гамазовые клещи и др.);
-          <br>
-          -- вредители продовольственных запасов (разные виды огнёвок,
-          точильщиков,
-          мукоедов и т.п.);
-          <br>
-          -- вредители материалов (кожееды, моли, усачи, древесные точильщики);
-          <br>
-          -- вредители растительных культур;
-          </ul>
-          -- гнус и иксодовые клещи;
-          <br>
-          <br>
-          Дезэффект оказывает услуги по дезинсекции всех категорий вредных
-          насекомых
+      <h2 class="title" id="s2_title"> Для физических лиц: </h2>
+      <div class="who-container">
+        <div class="who-card5"
+          style="background: url(./img/flat1.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Квартиры <br> 1 комната </div>
         </div>
-        <div class="section3__text2 block2-text">
-          <div class="section__block block2">
-            <img src="./img/ant.jpg" alt="ant" class="section3__image">
-            <div class="section__text"> Муравьи </div>
-          </div>
-          <br>
-          Дезинсекция помещений —
-          наиболее востребованная услуга. В ней
-          нуждаются
-          многочисленные рестораны и кафе, предприятия пищевой промышленности,
-          торговые и
-          бизнес-центры, а также все те, кто столкнулся с опасным и неприятным
-          соседством
-          с насекомыми и не намерен с этим мириться
-
-          Компания Дезэффект предлагает как регулярное обслуживание предприятий,
-          так и
-          проведение дезинсекции по разовым заявкам. Мы всегда готовы прийти Вам
-          на помощь
-          и обеспечить быстрое, качественное и безопасное уничтожение тараканов,
-          блох,
-          клопов, мух и других насекомых. Цена на услуги дезинсекции вполне
-          доступна,
-          поэтому провести ее не составит больших трудозатрат.
+        <div class="who-card6"
+          style="background: url(./img/flat2.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Квартиры <br> 2-3 комнаты </div>
         </div>
-
-        <div class="section3__text2 block3-text">
-          <div class="section__block block3">
-            <img src="./img/bug.jpg" alt="bug" class="section3__image">
-            <div class="section__text"> Клопы </div>
-          </div>
-          <div class="section3__text2 block3-text"> </div>
-
-          В современных условиях
-          предъявляются очень высокие требования к
-          эффективности
-          уничтожения насекомых, и в равной мере безопасности этих мероприятий.
-          Именно
-          поэтому специалисты Дезэффект внимательно изучают передовой
-          зарубежный
-          и отечественный опыт в сфере разработки новых действующих веществ и
-          формуляций
-          инсектицидов и внедряют новейшие методы для оказания услуг. Провести
-          дезинсекцию
-          с новейшими методами можно очень эффективно.
-
-          Дезэффект предлагает следующие услуги по уничтожению
-          насекомых:
+        <div class="who-card7"
+          style="background: url(./img/house.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Частные <br> дома </div>
         </div>
-
-        <div class="section3__text2 block4-text">
-          <div class="section__block block4">
-            <img src="./img/fly.jpg" alt="fly" class="section3__image">
-            <div class="section__text"> Мухи </div>
-          </div>
-          <div class="section3__text2 block4-text"> </div>
-
-          Разовая дезинсекция помещений и прилегающих территорий на объектах
-          всех
-          категорий. Позволяет быстро и эффективно избавиться от синантропных
-          членистоногих (тараканов, клопов и т.д.), и насекомых-вредителей
-          запасов
-          и
-          материалов, в том числе и на крупных предприятиях пищевой и
-          перерабатывающей
-          промышленности.
-
-          Проведение разовой дезинсекции помещений позволит быстро и эффективно
-          уничтожить
-          насекомых в ресторанах, кафе, магазинах, офисах, в производственных
-          помещениях и
-          в жилых домах. Компания «Дезэффект» обладает всем необходимым
-          оборудованием для
-          проведения обработок любого масштаба и сложности, против любых
-          насекомых
-          — от
-          суринамских мукоедов до тараканов, мух, блох и др.
-
-          Периодическая дезинсекция обеспечивает отсутствие вредных насекомых в
-          помещениях
-          ресторанов и кафе, на складах и производствах, в офисах, торговых и
-          развлекательных центрах на протяжении всего периода обслуживания.
-          Регулярное
-          наблюдение позволяет вовремя заметить самые первые признаки заражения,
-          а
-          эффективные профилактические меры — его предотвратить.
+        <div class="who-card8"
+          style="background: url(./img/hostel.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Общежития </div>
         </div>
+      </div>
 
-        <div class="section3__text2 block5-text">
-          <div class="section__block block5">
-            <img src="./img/moth.jpg" alt="moth" class="section3__image">
-            <div class="section__text"> Моль </div>
+      <h2 class="title" id="s2_title"> Обработка участков: </h2>
+      <div class="who-container">
+        <div class="who-card9"
+          style="background: url(./img/sanatorium.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Детские лагеря <br> и санатории <br> 1 комната
           </div>
-          <div class="section3__text2 block5-text"> </div>
-
-          Экономически выгодная форма сотрудничества и гарантия того, что
-          насекомые не
-          появятся вновь. Преимущества периодической дезинсекции в
-          систематическом
-          контроле ситуации на объекте, который осуществляется
-          специалистами-дезинфекторами, а также опытными и квалифицированными
-          санитарными
-          врачами нашей компании. Если объект обслуживается ежемесячно, то при
-          поступлении
-          жалоб на признаки насекомых, выезд специалистов и истребление
-          насекомых
-          производится экстренно, и уже без дополнительной оплаты. В случае
-          меньшей
-          периодичности обслуживания НПИЦ «Агрокон» дает гарантию на каждую
-          обработку до
-          30 дней.
         </div>
-
-        <div class="section3__text2 block6-text">
-          <div class="section__block block6">
-            <img src="./img/flea.jpg" alt="flea" class="section3__image">
-            <div class="section__text"> Блохи </div>
-          </div>
-          <div class="section3__text2 block6-text"> </div>
-
-          Комплексные услуги по периодической дератизации и дезинсекции —
-          наиболее
-          рациональная форма сотрудничества, предназначенная для организаций
-          самого
-          разного профиля. Позволяет поддерживать санитарно-эпидемиологическую
-          безопасность, обеспечить уничтожение насекомых и предотвратить вред,
-          причиняемый
-          грызунами.
-
-          За один выезд дезинфекторы нашей компании оказывают сразу две услуги,
-          что даёт
-          возможность сэкономить рабочее время наших специалистов и персонала
-          заказчика —
-          и это значительно дешевле, чем при заказе отдельных услуг по
-          дезинсекции
-          и
-          дератизации.
-
-          Мероприятия проводятся по индивидуальному графику, предусмотрены
-          визиты
-          как
-          дезинфекторов, так и санитарных врачей, контролирующих качество
-          проводимой
-          дезинсекции и дератизации. Периодичность выездов для проведения
-          дезинсекции
-          помещений, зависит от профиля деятельности предприятия (пищевое, не
-          пищевое),
-          его состояния и требований заказчика к сервису.
-
-          Дезинсекция — одна из самых востребованных услуг,
-          заказать ее можно как по телефону, так и через форму заявки на сайте.
+        <div class="who-card10"
+          style="background: url(./img/house2.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Дачные <br> участки </div>
         </div>
-
+        <div class="who-card11"
+          style="background: url(./img/mass.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Массовые <br> мероприятия </div>
+        </div>
+        <div class="who-card12"
+          style="background: url(./img/park.jpg), rgba(0, 0, 0, 0.45); background-size: cover;">
+          <div class="card-text"> Парки <br> и зоны отдыха </div>
+        </div>
       </div>
     </section>
-    <section class="section4">
-      <h2 class="section__title1"> Дератизация помещений </h2>
-      <h3 class="section__title2"> Устранение грызунов </h3>
-      <div class="section4__container">
-        <div class="section__block">
-          <img src="./img/rat.jpg" alt="rat" class="section4__image">
-          <div class="section__text"> Крысы </div>
+
+    <section class="our-advantages">
+      <h2 class="title" id="s3_title"> Наши преимущества: </h2>
+
+      <div class="container advantages-discount">
+        <div class="advantages">
+          <div class="advantage">
+            <img class="advantages-image" src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text">Мы используем только
+              профессиональные средства, <br> которые нельзя приобрести без
+              лицензии </div>
+          </div>
+          <div class="advantage">
+            <img src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text"> Мы предлагаем полный комплекс
+              работ по защите вашего <br> объекта от всех видов вредителей
+            </div>
+          </div>
+          <div class="advantage">
+            <img src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text"> Мы используем только
+              современное оборудование </div>
+          </div>
+          <div class="advantage">
+            <img src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text"> Мы работаем без выходных и в
+              любое время
+            </div>
+          </div>
+          <div class="advantage">
+            <img src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text"> Все виды работ проводятся
+              только в соответствии <br> с санитарными правилами </div>
+          </div>
+          <div class="advantage">
+            <img src="./img/marker.svg" alt="Marker">
+            <div class="advantages-text"> Вся ответственность за
+              проведенную работу <br> ложится на нашу компанию</div>
+          </div>
         </div>
-        <div class="section4__text2"> Lorem ipsum dolor sit amet
-          consectetur
-          adipisicing
-          elit. Non consequatur fuga culpa, eveniet necessitatibus error itaque
-          velit
-          aliquam enim amet reiciendis sapiente, harum natus dolore optio, earum
-          consectetur! Dolor, dignissimos?</div>
+        <div class="advantage">
 
-        <div class="section__block">
-          <img src="./img/mole.jpg" alt="mole" class="section4__image">
-          <div class="section__text"> Кроты </div>
         </div>
-        <div class="section4__text2"> Lorem ipsum dolor sit amet
-          consectetur
-          adipisicing
-          elit. Non consequatur fuga culpa, eveniet necessitatibus error itaque
-          velit
-          aliquam enim amet reiciendis sapiente, harum natus dolore optio, earum
-          consectetur! Dolor, dignissimos?</div>
-
-        <div class="section__block">
-          <img src="./img/mouse.jpg" alt="mouse" class="section4__image">
-          <div class="section__text"> Мыши </div>
+        <div class="discount">
+          <div class="discount-title">
+            Специальное предложение!
+          </div>
+          <div class="discount-text">При заключении договора <br> на годовое
+            обслуживание <span>скидка 20%</span></div>
         </div>
-        <div class="section4__text2"> Lorem ipsum dolor sit amet
-          consectetur
-          adipisicing
-          elit. Non consequatur fuga culpa, eveniet necessitatibus error itaque
-          velit
-          aliquam enim amet reiciendis sapiente, harum natus dolore optio, earum
-          consectetur! Dolor, dignissimos?</div>
+      </div>
 
-
+      </div>
+      </div>
     </section>
-    <section class="section5">
-      <h2 class="section__title1"> Орнитологическая безопасность </h2>
-      <h3 class="section__title2"> Защита объектов от птиц </h3>
-    </section>
+
+    <section class="customers">
+      <h2 class="title" id="s4_title"> Наши клиенты: </h2>
+      <div class="customer-container">
+        <img class="customer" src="./img/sosedy_logo.png" alt="Sosedy">
+        <img class="customer" src="./img/sushi_vesla_logo.png"
+          alt="Sushi_vesla">
+        <img class="customer" src="./img/danamall_logo.png" alt="Danamall">
+      </div>
   </main>
-  <footer class="footer">
-    <div class="footer__contacts">
-      <h2 class="footer__title" id="f_title">Наши контакты: </h2>
-      <div class="footer__cont">
-        <div class="footer__name logo"> эффект </div>
-        <div class="footer__block-address">
-          <div class="footer__address">
-            220000, г.Минск, пр-т Независимости, 194
-          </div>
-          <div class="footer__tel"> +375 29 444 44 44</div>
-          <div class="footer__tel"> +375 29 777 77 77</div>
-
-        </div>
-        <div class="footer__icons">
-          <img src="./img/instagram.svg" alt="instagram" class="footer__icon">
-          <img src="./img/twitter.svg" alt="twitter" class="footer__icon">
-          <img src="./img/facebook.svg" alt="facebook" class="footer__icon">
-          <img src="./img/vk.svg" alt="vk" class="footer__icon">
-        </div>
+  <footer class="nav">
+    <div class="nav-container">
+      <img src="./img/logo.png" alt="logo">
+      <div class="contacts">
+        <div class="email"> deseffect@gmail.com </div>
+        <div class="tel"> +375 29 777 77 77 </div>
       </div>
     </div>
   </footer>
