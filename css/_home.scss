@@ -87,16 +87,17 @@
   margin: 10rem 0 8rem;
 }
 
-.work-container {
+.work-blocks {
   background: #EBE5CA;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  margin-bottom: 10rem;
+}
+
+.work-container {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  margin-bottom: 10rem;
-  padding: 5rem;
+  padding-top: 5rem;
 
   .work-block {
     display: flex;
@@ -117,6 +118,15 @@
       text-align: left;
     }
   }
+}
+
+.work-text1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 7rem;
+  text-align: center;
+  color: #FF0606;
+  padding-bottom: 5rem;
 }
 
 
@@ -443,6 +453,10 @@
         font-size: 1.4rem;
       }
     }
+    .work-text1 {
+      font-size: 3.6rem;
+    }
+
   }
 
   .for-who {
