@@ -185,6 +185,7 @@ html {
             justify-content: space-between;
     margin-bottom: 10rem; }
     .our-advantages .advantages-discount .advantages {
+      width: 45%;
       background: #EBE5CA;
       -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
               box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
@@ -202,6 +203,7 @@ html {
           line-height: 2.4rem;
           margin-left: 2rem; }
   .our-advantages .discount {
+    width: 45%;
     background: url(../img/discount.jpg) rgba(0, 0, 0, 0.45) center center no-repeat;
     background-blend-mode: darken;
     background-size: cover;
@@ -288,7 +290,7 @@ html {
     width: 50%; }
 
   .our-advantages .advantages-discount {
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -302,8 +304,11 @@ html {
             justify-content: center;
     margin-bottom: 10rem; }
     .our-advantages .advantages-discount .advantages {
-      margin-bottom: 5rem; }
+      width: 80%;
+      margin: auto auto 5rem; }
   .our-advantages .discount {
+    width: 80%;
+    margin: auto;
     padding: 4rem 3rem; }
 
   .customer-container .customer {
@@ -357,6 +362,7 @@ html {
     line-height: 2.5rem; }
 
   .types-of-works .work-container {
+    width: 95%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -384,6 +390,10 @@ html {
 
   .our-advantages .advantages-discount {
     width: 95%; }
+    .our-advantages .advantages-discount .advantages {
+      width: 100%; }
+  .our-advantages .discount {
+    width: 100%; }
 
   .customer-container .customer {
     width: 90px;
