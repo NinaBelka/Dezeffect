@@ -53,7 +53,7 @@ html {
       background-color: white; }
 
 .header-block {
-  background: url(../img/title.jpg) 100% no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/title.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover;
   background-attachment: fixed; }
