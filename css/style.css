@@ -4,14 +4,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow-x: hidden; }
+          box-sizing: border-box; }
 
 html {
   font-size: 10px; }
 
 .nav {
-  background: #323925; }
+  background: #4F4F65; }
   .nav .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,23 +22,26 @@ html {
     margin: auto;
     font-size: 1.4rem;
     line-height: 2.1rem;
-    padding: 1rem 0;
-    color: rgba(255, 255, 255, 0.8); }
+    padding: 1rem 0; }
     .nav .nav-container .logo {
       width: 20rem; }
     .nav .nav-container .links {
       margin-top: 3rem; }
       .nav .nav-container .links .header-link {
-        margin-right: 2rem;
+        margin-right: 1.8rem;
         text-decoration: none;
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.8); }
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer; }
+        .nav .nav-container .links .header-link:hover {
+          color: #FFFFFF; }
     .nav .nav-container .contacts {
       text-align: right;
       margin-top: 2rem;
-      font-style: normal; }
+      font-style: normal;
+      color: rgba(255, 255, 255, 0.8); }
   .nav .menu-burger {
     display: none;
     margin-top: 2rem; }
@@ -66,10 +68,15 @@ html {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 40rem 0; }
+  padding: 35rem 0; }
+
+.down_arrow {
+  display: block;
+  text-align: center;
+  margin: auto; }
 
 .types-of-works {
-  background: #9BAC81; }
+  background: #8397BD; }
 
 .title {
   font-weight: bold;
@@ -82,7 +89,9 @@ html {
   margin: 10rem 0 8rem; }
 
 .work-blocks {
-  background: #EBE5CA;
+  background: #E6EAF6;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 10rem; }
 
 .work-container {
@@ -123,8 +132,8 @@ html {
   padding-bottom: 5rem; }
 
 .for-who {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 57, 37, 0.5)), color-stop(52.03%, rgba(139, 146, 139, 0.31)), to(#DDE3E9));
-  background: linear-gradient(180deg, rgba(50, 57, 37, 0.5) 0%, rgba(139, 146, 139, 0.31) 52.03%, #DDE3E9 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 79, 101, 0.8)), color-stop(52.02%, #8397BD), color-stop(52.03%, #8397BD), to(#E6EAF6));
+  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%); }
   .for-who .who-container {
     width: 100%;
     display: -webkit-box;
@@ -156,7 +165,8 @@ html {
           -ms-flex-pack: center;
               justify-content: center;
       background-blend-mode: darken;
-      background-size: contain; }
+      background-size: contain;
+      cursor: pointer; }
       .for-who .who-container .who-card1 .card-text,
       .for-who .who-container .who-card2 .card-text,
       .for-who .who-container .who-card3 .card-text,
@@ -169,14 +179,94 @@ html {
       .for-who .who-container .who-card10 .card-text,
       .for-who .who-container .who-card11 .card-text,
       .for-who .who-container .who-card12 .card-text {
-        position: absolute;
-        font-weight: bold;
-        font-size: 2.4rem;
-        line-height: 3.6rem;
-        text-align: center;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
-        color: #FFFFFF; }
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .for-who .who-container .who-card1 .card-text .card-text1,
+        .for-who .who-container .who-card2 .card-text .card-text1,
+        .for-who .who-container .who-card3 .card-text .card-text1,
+        .for-who .who-container .who-card4 .card-text .card-text1,
+        .for-who .who-container .who-card5 .card-text .card-text1,
+        .for-who .who-container .who-card6 .card-text .card-text1,
+        .for-who .who-container .who-card7 .card-text .card-text1,
+        .for-who .who-container .who-card8 .card-text .card-text1,
+        .for-who .who-container .who-card9 .card-text .card-text1,
+        .for-who .who-container .who-card10 .card-text .card-text1,
+        .for-who .who-container .who-card11 .card-text .card-text1,
+        .for-who .who-container .who-card12 .card-text .card-text1 {
+          font-weight: bold;
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+          text-align: center;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+        .for-who .who-container .who-card1 .card-text .card-text2,
+        .for-who .who-container .who-card2 .card-text .card-text2,
+        .for-who .who-container .who-card3 .card-text .card-text2,
+        .for-who .who-container .who-card4 .card-text .card-text2,
+        .for-who .who-container .who-card5 .card-text .card-text2,
+        .for-who .who-container .who-card6 .card-text .card-text2,
+        .for-who .who-container .who-card7 .card-text .card-text2,
+        .for-who .who-container .who-card8 .card-text .card-text2,
+        .for-who .who-container .who-card9 .card-text .card-text2,
+        .for-who .who-container .who-card10 .card-text .card-text2,
+        .for-who .who-container .who-card11 .card-text .card-text2,
+        .for-who .who-container .who-card12 .card-text .card-text2 {
+          display: none;
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 3rem;
+          text-align: center;
+          letter-spacing: 0.25em;
+          color: #FFFFFF; }
+      .for-who .who-container .who-card1:hover,
+      .for-who .who-container .who-card2:hover,
+      .for-who .who-container .who-card3:hover,
+      .for-who .who-container .who-card4:hover,
+      .for-who .who-container .who-card5:hover,
+      .for-who .who-container .who-card6:hover,
+      .for-who .who-container .who-card7:hover,
+      .for-who .who-container .who-card8:hover,
+      .for-who .who-container .who-card9:hover,
+      .for-who .who-container .who-card10:hover,
+      .for-who .who-container .who-card11:hover,
+      .for-who .who-container .who-card12:hover {
+        color: #FFFFFF;
+        background-blend-mode: hard-light; }
+        .for-who .who-container .who-card1:hover .card-text1,
+        .for-who .who-container .who-card2:hover .card-text1,
+        .for-who .who-container .who-card3:hover .card-text1,
+        .for-who .who-container .who-card4:hover .card-text1,
+        .for-who .who-container .who-card5:hover .card-text1,
+        .for-who .who-container .who-card6:hover .card-text1,
+        .for-who .who-container .who-card7:hover .card-text1,
+        .for-who .who-container .who-card8:hover .card-text1,
+        .for-who .who-container .who-card9:hover .card-text1,
+        .for-who .who-container .who-card10:hover .card-text1,
+        .for-who .who-container .who-card11:hover .card-text1,
+        .for-who .who-container .who-card12:hover .card-text1 {
+          color: #FFFFFF; }
+        .for-who .who-container .who-card1:hover .card-text2,
+        .for-who .who-container .who-card2:hover .card-text2,
+        .for-who .who-container .who-card3:hover .card-text2,
+        .for-who .who-container .who-card4:hover .card-text2,
+        .for-who .who-container .who-card5:hover .card-text2,
+        .for-who .who-container .who-card6:hover .card-text2,
+        .for-who .who-container .who-card7:hover .card-text2,
+        .for-who .who-container .who-card8:hover .card-text2,
+        .for-who .who-container .who-card9:hover .card-text2,
+        .for-who .who-container .who-card10:hover .card-text2,
+        .for-who .who-container .who-card11:hover .card-text2,
+        .for-who .who-container .who-card12:hover .card-text2 {
+          display: block; }
 
 .our-advantages {
   background: url(../img/textura.png) no-repeat;
@@ -194,7 +284,7 @@ html {
     margin-bottom: 10rem; }
     .our-advantages .advantages-discount .advantages {
       width: 45%;
-      background: #EBE5CA;
+      background: #E6EAF6;
       -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
               box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
@@ -205,9 +295,8 @@ html {
         display: flex;
         margin-bottom: 5rem; }
         .our-advantages .advantages-discount .advantages .advantage .advantages-text {
-          display: inline-block;
           font-style: normal;
-          font-size: 1.6rem;
+          font-size: 1.8rem;
           line-height: 2.4rem;
           margin-left: 2rem; }
   .our-advantages .discount {

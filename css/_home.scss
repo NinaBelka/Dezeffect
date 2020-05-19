@@ -1,6 +1,6 @@
 // Шапка 
 .nav {
-  background: #323925;
+  background: #4F4F65;
 
   .nav-container {
     display: flex;
@@ -10,7 +10,6 @@
     font-size: 1.4rem;
     line-height: 2.1rem;
     padding: 1rem 0;
-    color: rgba(255, 255, 255, 0.8);
 
     .logo {
       width: 20rem;
@@ -20,12 +19,17 @@
       margin-top: 3rem;
 
       .header-link {
-        margin-right: 2rem;
+        margin-right: 1.8rem;
         text-decoration: none;
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+
+        &:hover {
+          color: #FFFFFF;
+        }
       }
     }
 
@@ -33,6 +37,8 @@
       text-align: right;
       margin-top: 2rem;
       font-style: normal;
+      color: rgba(255, 255, 255, 0.8);
+
     }
   }
 
@@ -68,12 +74,18 @@
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 40rem 0;
+  padding: 35rem 0;
+}
+
+.down_arrow {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 // Виды работ
 .types-of-works {
-  background: #9BAC81;
+  background: #8397BD;
 }
 
 .title {
@@ -88,7 +100,8 @@
 }
 
 .work-blocks {
-  background: #EBE5CA;
+  background: #E6EAF6;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 10rem;
 }
 
@@ -129,10 +142,9 @@
   padding-bottom: 5rem;
 }
 
-
 // Для кого мы работаем
 .for-who {
-  background: linear-gradient(180deg, rgba(50, 57, 37, 0.5) 0%, rgba(139, 146, 139, 0.31) 52.03%, #DDE3E9 100%);
+  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%);
 
   .who-container {
     width: 100%;
@@ -158,16 +170,46 @@
       justify-content: center;
       background-blend-mode: darken;
       background-size: contain;
+      cursor: pointer;
 
       .card-text {
-        position: absolute;
-        font-weight: bold;
-        font-size: 2.4rem;
-        line-height: 3.6rem;
-        text-align: center;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card-text1 {
+          font-weight: bold;
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+          text-align: center;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+
+        .card-text2 {
+          display: none;
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 3rem;
+          text-align: center;
+          letter-spacing: 0.25em;
+          color: #FFFFFF;
+        }
+      }
+
+      &:hover {
         color: #FFFFFF;
+        background-blend-mode: hard-light;
+
+        .card-text1 {
+          color: #FFFFFF;
+        }
+
+        .card-text2 {
+          display: block;
+        }
       }
     }
   }
@@ -188,7 +230,7 @@
 
     .advantages {
       width: 45%;
-      background: #EBE5CA;
+      background: #E6EAF6;
       box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       padding: 4rem 3.5rem 0;
@@ -198,9 +240,8 @@
         margin-bottom: 5rem;
 
         .advantages-text {
-          display: inline-block;
           font-style: normal;
-          font-size: 1.6rem;
+          font-size: 1.8rem;
           line-height: 2.4rem;
           margin-left: 2rem;
         }
@@ -453,6 +494,7 @@
         font-size: 1.4rem;
       }
     }
+
     .work-text1 {
       font-size: 3.6rem;
     }
