@@ -53,12 +53,10 @@ html {
       background-color: white; }
 
 .header-block {
-  height: 100vh;
-  background: url(../img/title.jpg) rgba(0, 0, 0, 0.45);
+  background: url(../img/title.jpg) 100% no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center; }
+  background-attachment: fixed; }
 
 .header-text {
   font-weight: bold;
@@ -73,10 +71,12 @@ html {
 .down_arrow {
   display: block;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 5rem; }
 
 .types-of-works {
-  background: #8397BD; }
+  background: #8397BD;
+  padding-bottom: 5rem; }
 
 .title {
   font-weight: bold;
@@ -86,7 +86,7 @@ html {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #000000;
-  margin: 10rem 0 8rem; }
+  padding: 10rem 0 8rem; }
 
 .work-blocks {
   background: #E6EAF6;
@@ -271,7 +271,8 @@ html {
 .our-advantages {
   background: url(../img/textura.png) no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 5rem; }
   .our-advantages .advantages-discount {
     width: 80%;
     margin: auto;
@@ -336,8 +337,9 @@ html {
         color: rgba(255, 255, 255, 0.8); }
 
 .customers {
-  background-image: url(../img/title_1.png);
-  background-size: cover; }
+  background-image: url(../img/title1.jpg);
+  background-size: cover;
+  padding-bottom: 7rem; }
 
 .customer-container {
   display: -webkit-box;
@@ -350,8 +352,7 @@ html {
           justify-content: space-between;
   margin-bottom: 10rem; }
   .customer-container .customer {
-    width: 30rem;
-    height: 8rem;
+    width: 30%;
     margin-right: 5rem; }
 
 @media (max-width: 1200px) {
@@ -406,12 +407,7 @@ html {
   .our-advantages .discount {
     width: 80%;
     margin: auto;
-    padding: 4rem 3rem; }
-
-  .customer-container .customer {
-    width: 18rem;
-    height: 5rem;
-    margin-right: 5rem; } }
+    padding: 4rem 3rem; } }
 @media (max-width: 992px) {
   .nav {
     font-size: 1rem;
@@ -439,7 +435,7 @@ html {
 @media (max-width: 576px) {
   .title {
     font-size: 2rem;
-    margin: 8rem 0 5rem; }
+    padding: 8rem 0 5rem; }
 
   .nav {
     font-size: 1rem;
@@ -494,9 +490,20 @@ html {
   .our-advantages .discount {
     width: 100%; }
 
-  .customer-container .customer {
-    width: 90px;
-    height: 2rem;
-    margin-right: 1rem; } }
+  .customer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto; }
+    .customer-container .customer {
+      width: 40%;
+      margin: 0 0 5rem; } }
 
 /*# sourceMappingURL=style.css.map */
