@@ -7,12 +7,11 @@
   .header-text {
     font-weight: bold;
     font-size: 4rem;
-    line-height: 6rem;
     text-align: center;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20vh 0 5vh;
+    padding: 20vh 0 3vh;
   }
 
   span {
@@ -61,8 +60,8 @@
 
       h2 {
         font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
         margin-bottom: 2rem;
@@ -70,8 +69,8 @@
 
       .disinfection-what-text {
         font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
       }
     }
 
@@ -83,8 +82,8 @@
 
       h2 {
         font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
         margin-bottom: 2rem;
@@ -92,8 +91,12 @@
 
       .disinfection-methods-text {
         font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        span {
+          font-weight: 600;
+        }
       }
     }
   }
@@ -151,18 +154,148 @@
     .question3,
     .question4 {
       font-weight: 600;
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
       padding-bottom: 2rem;
     }
+
     .answer1,
     .answer2,
     .answer3,
     .answer4 {
       display: none;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
     }
   }
+}
+
+@media (max-width: 992px) {
+  .texts {
+
+    .disinfection-text-container {
+      flex-direction: column;
+
+      .disinfection-what {
+        margin: 0 0 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .texts {
+
+    .disinfection-images {
+
+      .disinfection-image {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+
+  .services {
+
+    .services-container {
+
+      .services-block {
+        width: 45%;
+
+        .services-icon {
+          margin-bottom: 2rem;
+        }
+
+        .services-text {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  .questions {
+
+    .questions-container {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header-block-d {
+    height: 50rem;
+
+    .header-text {
+      font-size: 3rem;
+      line-height: 4rem;
+      padding: 30vh 0 3vh;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .texts {
+
+    .disinfection-images {
+
+      .disinfection-image {
+        width: 5rem;
+        height: 5rem;
+        margin: 5rem 1rem 4rem;
+      }
+    }
+
+    .disinfection-text-container {
+      width: 95%;
+
+      .disinfection-what {
+        box-shadow: none;
+      }
+
+      .disinfection-methods {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .services {
+
+    .services-container {
+
+      .services-block {
+        width: 95%;
+      }
+    }
+  }
+
+  .questions {
+
+    .questions-container {
+      width: 95%;
+
+      .question1,
+      .question2,
+      .question3,
+      .question4 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+      }
+
+      .answer1,
+      .answer2,
+      .answer3,
+      .answer4 {
+        display: none;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
 }
