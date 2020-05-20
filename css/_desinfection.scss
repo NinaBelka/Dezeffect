@@ -1,0 +1,168 @@
+.header-block-d {
+  height: 50rem;
+  background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
+  background-blend-mode: darken;
+  background-size: cover;
+
+  .header-text {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20vh 0 5vh;
+  }
+
+  span {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+// Блок текста
+
+.texts {
+  background: linear-gradient(180deg, rgba(115, 115, 134, 0.36) 0%, rgba(230, 234, 246, 0.6) 100%);
+
+  .disinfection-images {
+    display: flex;
+    justify-content: center;
+
+    .disinfection-image {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin: 10rem 2rem 5rem;
+    }
+  }
+
+  .disinfection-text-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+
+    .disinfection-what {
+      margin-right: 5rem;
+      background: #8397BD;
+      box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px 50px;
+      padding: 3rem;
+
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+
+      .disinfection-what-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .disinfection-methods {
+      background: #8397BD;
+      box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px 50px;
+      padding: 3rem;
+
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+
+      .disinfection-methods-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// Блок услуг
+.services {
+  background: linear-gradient(180deg, #EEF0F7 0%, #CDCDD4 100%);
+
+  .services-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+
+    .services-block {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+
+      .services-icon {
+        width: 10rem;
+        margin-bottom: 5rem;
+      }
+
+      .services-text {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Блок вопросов
+
+.questions {
+  background: url(../img/disinfection1.jpg) center center no-repeat;
+  background-size: cover;
+
+
+  .questions-container {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5rem;
+
+    .question1,
+    .question2,
+    .question3,
+    .question4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 2rem;
+    }
+    .answer1,
+    .answer2,
+    .answer3,
+    .answer4 {
+      display: none;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

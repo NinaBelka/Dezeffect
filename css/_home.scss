@@ -65,24 +65,24 @@
   background-blend-mode: darken;
   background-attachment: fixed;
   background-size: cover;
-}
 
-.header-text {
-  font-weight: bold;
-  font-size: 4rem;
-  line-height: 6rem;
-  text-align: center;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 35rem 0;
-}
+  .header-text {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 45vh 0 30vh;
+  }
 
-.down_arrow {
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 5rem;
+  .down_arrow {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
 }
 
 // Виды работ
@@ -313,7 +313,7 @@
   margin-bottom: 10rem;
 
   .customer {
-    width: 30%;
+    width: 23%;
     margin-right: 5rem;
   }
 }

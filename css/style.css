@@ -85,22 +85,20 @@ html {
   background-blend-mode: darken;
   background-attachment: fixed;
   background-size: cover; }
-
-.header-text {
-  font-weight: bold;
-  font-size: 4rem;
-  line-height: 6rem;
-  text-align: center;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 35rem 0; }
-
-.down_arrow {
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 5rem; }
+  .header-block .header-text {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 45vh 0 30vh; }
+  .header-block .down_arrow {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5rem; }
 
 .types-of-works {
   background: #8397BD;
@@ -393,7 +391,7 @@ html {
           justify-content: space-between;
   margin-bottom: 10rem; }
   .customer-container .customer {
-    width: 30%;
+    width: 23%;
     margin-right: 5rem; }
 
 @media (max-width: 1200px) {
@@ -556,5 +554,154 @@ html {
     .customer-container .customer {
       width: 40%;
       margin: 0 0 5rem; } }
+.header-block-d {
+  height: 50rem;
+  background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
+  background-blend-mode: darken;
+  background-size: cover; }
+  .header-block-d .header-text {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20vh 0 5vh; }
+  .header-block-d span {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFFFFF; }
+
+.texts {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(115, 115, 134, 0.36)), to(rgba(230, 234, 246, 0.6)));
+  background: linear-gradient(180deg, rgba(115, 115, 134, 0.36) 0%, rgba(230, 234, 246, 0.6) 100%); }
+  .texts .disinfection-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .texts .disinfection-images .disinfection-image {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin: 10rem 2rem 5rem; }
+  .texts .disinfection-text-container {
+    width: 80%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 5rem; }
+    .texts .disinfection-text-container .disinfection-what {
+      margin-right: 5rem;
+      background: #8397BD;
+      -webkit-box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+              box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px 50px;
+      padding: 3rem; }
+      .texts .disinfection-text-container .disinfection-what h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 2rem; }
+      .texts .disinfection-text-container .disinfection-what .disinfection-what-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px; }
+    .texts .disinfection-text-container .disinfection-methods {
+      background: #8397BD;
+      -webkit-box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+              box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px 50px;
+      padding: 3rem; }
+      .texts .disinfection-text-container .disinfection-methods h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 2rem; }
+      .texts .disinfection-text-container .disinfection-methods .disinfection-methods-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px; }
+
+.services {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEF0F7), to(#CDCDD4));
+  background: linear-gradient(180deg, #EEF0F7 0%, #CDCDD4 100%); }
+  .services .services-container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 5rem; }
+    .services .services-container .services-block {
+      width: 20%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 2rem; }
+      .services .services-container .services-block .services-icon {
+        width: 10rem;
+        margin-bottom: 5rem; }
+      .services .services-container .services-block .services-text {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center; }
+
+.questions {
+  background: url(../img/disinfection1.jpg) center center no-repeat;
+  background-size: cover; }
+  .questions .questions-container {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 5rem; }
+    .questions .questions-container .question1,
+    .questions .questions-container .question2,
+    .questions .questions-container .question3,
+    .questions .questions-container .question4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      padding-bottom: 2rem; }
+    .questions .questions-container .answer1,
+    .questions .questions-container .answer2,
+    .questions .questions-container .answer3,
+    .questions .questions-container .answer4 {
+      display: none;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px; }
 
 /*# sourceMappingURL=style.css.map */
