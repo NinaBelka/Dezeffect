@@ -506,7 +506,8 @@ html {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 5rem 0.5rem 0; }
     .types-of-works .work-container .work-icon {
       width: 4rem;
       height: 4rem;
