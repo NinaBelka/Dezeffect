@@ -61,8 +61,8 @@
   height: 100vh;
   background: url(../img/title.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
+  background-attachment: fixed;
   background-size: cover;
-  // background-attachment: fixed;
 }
 
 .header-text {
@@ -471,6 +471,11 @@
       }
     }
   }
+.header-block {
+  height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
   .header-text {
     font-size: 1.5rem;
@@ -520,9 +525,13 @@
   }
 
   .our-advantages {
+      background-attachment: scroll;
+
 
     .advantages-discount {
       width: 95%;
+
+      
 
       .advantages {
         width: 100%;

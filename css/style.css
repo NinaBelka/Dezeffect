@@ -81,6 +81,7 @@ html {
   height: 100vh;
   background: url(../img/title.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
+  background-attachment: fixed;
   background-size: cover; }
 
 .header-text {
@@ -475,6 +476,11 @@ html {
       .nav .nav-container .menu-burger {
         display: block; }
 
+  .header-block {
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: cover; }
+
   .header-text {
     font-size: 1.5rem;
     line-height: 2.5rem; }
@@ -508,12 +514,14 @@ html {
   .for-who .who-container .who-card12 {
     width: 100%; }
 
-  .our-advantages .advantages-discount {
-    width: 95%; }
-    .our-advantages .advantages-discount .advantages {
+  .our-advantages {
+    background-attachment: scroll; }
+    .our-advantages .advantages-discount {
+      width: 95%; }
+      .our-advantages .advantages-discount .advantages {
+        width: 100%; }
+    .our-advantages .discount {
       width: 100%; }
-  .our-advantages .discount {
-    width: 100%; }
 
   .customer-container {
     -webkit-box-orient: vertical;
