@@ -31,27 +31,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Oswald';
-  src: local('Oswald Medium'),
-  local('Oswald-Medium'),
-  url('../fonts/Oswaldmedium.woff2') format('woff2'),
-  url('../fonts/Oswaldmedium.woff') format('woff'),
-  url('../fonts/Oswaldmedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Oswald';
-  src: local('Oswald Bold'),
-  local('Oswald-Bold'),
-  url('../fonts/Oswaldbold.woff2') format('woff2'),
-  url('../fonts/Oswaldbold.woff') format('woff'),
-  url('../fonts/Oswaldbold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
 
 * {
   font-family: 'Oswald',
@@ -68,3 +47,5 @@ html {
 
 @import "_home";
 @import "_desinfection";
+@import "_pestControl";
+@import "_deratization";

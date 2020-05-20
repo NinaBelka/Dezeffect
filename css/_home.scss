@@ -22,6 +22,7 @@
       .header-link {
         margin-right: 1.8rem;
         text-decoration: none;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
@@ -37,7 +38,7 @@
     .contacts {
       text-align: right;
       margin-top: 2rem;
-      font-style: normal;
+      font-weight: 400;
       color: rgba(255, 255, 255, 0.8);
 
     }
@@ -58,7 +59,6 @@
 }
 
 // Титульный блок
-
 .header-block {
   height: 100vh;
   background: url(../img/title.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
@@ -74,7 +74,7 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 45vh 0 30vh;
+    padding: 45vh 0 20vh;
   }
 
   .down_arrow {
@@ -92,7 +92,8 @@
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
   font-size: 3rem;
   line-height: 4.4rem;
   text-align: center;
@@ -106,40 +107,47 @@
   background: #E6EAF6;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 10rem;
-}
 
-.work-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-  padding-top: 5rem;
-
-  .work-block {
+  .work-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 5rem;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
 
-    .work-icon {
-      width: 10rem;
-      height: 10rem;
-      margin-right: 4rem;
+    .work-blocks1 {
+      margin-right: 2rem;
+
     }
 
-    .work-text {
-      display: inline-block;
-      font-weight: bold;
-      font-size: 3rem;
-      color: #000000;
-      text-align: left;
+    .work-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 5rem;
+
+      .work-icon {
+        width: 10rem;
+        height: 10rem;
+        margin-right: 4rem;
+      }
+
+      .work-text {
+        display: inline-block;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.5rem;
+        color: #000000;
+        text-align: left;
+      }
     }
   }
 }
 
 .work-text1 {
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
   font-size: 4.8rem;
   line-height: 7rem;
   text-align: center;
@@ -186,7 +194,8 @@
         align-items: center;
 
         .card-text1 {
-          font-weight: bold;
+          font-weight: 800;
+          font-style: normal;
           font-size: 2.4rem;
           line-height: 3.6rem;
           text-align: center;
@@ -197,7 +206,8 @@
 
         .card-text2 {
           display: none;
-          font-weight: bold;
+          font-weight: 800;
+          font-style: normal;
           font-size: 1.5rem;
           line-height: 3rem;
           text-align: center;
@@ -249,6 +259,7 @@
         margin-bottom: 5rem;
 
         .advantages-text {
+          font-weight: 400;
           font-style: normal;
           font-size: 1.8rem;
           line-height: 2.4rem;
@@ -271,7 +282,8 @@
     border-radius: 10px;
 
     .discount-title {
-      font-weight: bold;
+      font-weight: 800;
+      font-style: normal;
       font-size: 2.4rem;
       line-height: 3.6rem;
       letter-spacing: 0.15em;
@@ -281,7 +293,8 @@
     }
 
     .discount-text {
-      font-weight: bold;
+      font-weight: 800;
+      font-style: normal;
       color: rgba(255, 255, 255, 0.8);
       font-size: 2.4rem;
       line-height: 3.6rem;
@@ -344,14 +357,18 @@
   }
 
   .types-of-works {
-    .work-container {
-      .work-icon {
-        width: 8rem;
-        height: 8rem;
-      }
+    .work-blocks {
+      .work-container {
+        .work-block {
+          .work-icon {
+            width: 8rem;
+            height: 8rem;
+          }
 
-      .work-text {
-        font-size: 1.8rem;
+          .work-text {
+            font-size: 1.8rem;
+          }
+        }
       }
     }
   }
@@ -399,12 +416,6 @@
       padding: 4rem 3rem;
     }
   }
-
-  .customer-container {
-
-    .customer {}
-  }
-
 }
 
 @media (max-width: 992px) {
@@ -430,24 +441,61 @@
     }
   }
 
-  .header-text {
-    font-size: 2.5rem;
+  .header-block {
+    .header-text {
+      font-size: 2.5rem;
+    }
   }
+
+  .types-of-works {
+    .work-blocks {
+      .work-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        .work-blocks1 {
+          margin-right: 0;
+        }
+
+        .work-block {
+          .work-icon {
+            width: 6rem;
+            height: 6rem;
+          }
+
+          .work-text {
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      .work-text1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
   .types-of-works {
+
     .work-container {
       padding: 5rem 2rem 0;
 
-      .work-icon {
-        width: 5rem;
-        height: 4rem;
-        margin-right: 1rem;
-      }
+      .work-block {
 
-      .work-text {
-        font-size: 1.4rem;
+        .work-icon {
+          width: 5rem;
+          height: 4rem;
+          margin-right: 1rem;
+        }
+
+        .work-text {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -485,12 +533,12 @@
     height: 100vh;
     background-attachment: scroll;
     background-size: cover;
-  }
 
-  .header-text {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    padding: 20rem 0;
+    .header-text {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      padding: 20rem 0;
+    }
   }
 
   .types-of-works {

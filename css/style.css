@@ -13,16 +13,6 @@
   src: local("Oswald Heavy"), local("Oswald-Heavy"), url("../fonts/Oswaldheavy.woff2") format("woff2"), url("../fonts/Oswaldheavy.woff") format("woff"), url("../fonts/Oswaldheavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
-@font-face {
-  font-family: 'Oswald';
-  src: local("Oswald Medium"), local("Oswald-Medium"), url("../fonts/Oswaldmedium.woff2") format("woff2"), url("../fonts/Oswaldmedium.woff") format("woff"), url("../fonts/Oswaldmedium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Oswald';
-  src: local("Oswald Bold"), local("Oswald-Bold"), url("../fonts/Oswaldbold.woff2") format("woff2"), url("../fonts/Oswaldbold.woff") format("woff"), url("../fonts/Oswaldbold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
 * {
   font-family: 'Oswald', sans-serif;
   scroll-behavior: smooth;
@@ -57,6 +47,7 @@ html {
       .nav .nav-container .links .header-link {
         margin-right: 1.8rem;
         text-decoration: none;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
@@ -67,7 +58,7 @@ html {
     .nav .nav-container .contacts {
       text-align: right;
       margin-top: 2rem;
-      font-style: normal;
+      font-weight: 400;
       color: rgba(255, 255, 255, 0.8); }
   .nav .menu-burger {
     display: none;
@@ -93,7 +84,7 @@ html {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 45vh 0 30vh; }
+    padding: 45vh 0 20vh; }
   .header-block .down_arrow {
     display: block;
     text-align: center;
@@ -105,7 +96,8 @@ html {
   padding-bottom: 5rem; }
 
 .title {
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
   font-size: 3rem;
   line-height: 4.4rem;
   text-align: center;
@@ -119,42 +111,45 @@ html {
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 10rem; }
-
-.work-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
-  margin: auto;
-  padding-top: 5rem; }
-  .work-container .work-block {
+  .work-blocks .work-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 5rem; }
-    .work-container .work-block .work-icon {
-      width: 10rem;
-      height: 10rem;
-      margin-right: 4rem; }
-    .work-container .work-block .work-text {
-      display: inline-block;
-      font-weight: bold;
-      font-size: 3rem;
-      color: #000000;
-      text-align: left; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem; }
+    .work-blocks .work-container .work-blocks1 {
+      margin-right: 2rem; }
+    .work-blocks .work-container .work-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 5rem; }
+      .work-blocks .work-container .work-block .work-icon {
+        width: 10rem;
+        height: 10rem;
+        margin-right: 4rem; }
+      .work-blocks .work-container .work-block .work-text {
+        display: inline-block;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.5rem;
+        color: #000000;
+        text-align: left; }
 
 .work-text1 {
-  font-weight: bold;
+  font-weight: 800;
+  font-style: normal;
   font-size: 4.8rem;
   line-height: 7rem;
   text-align: center;
@@ -234,7 +229,8 @@ html {
         .for-who .who-container .who-card10 .card-text .card-text1,
         .for-who .who-container .who-card11 .card-text .card-text1,
         .for-who .who-container .who-card12 .card-text .card-text1 {
-          font-weight: bold;
+          font-weight: 800;
+          font-style: normal;
           font-size: 2.4rem;
           line-height: 3.6rem;
           text-align: center;
@@ -254,7 +250,8 @@ html {
         .for-who .who-container .who-card11 .card-text .card-text2,
         .for-who .who-container .who-card12 .card-text .card-text2 {
           display: none;
-          font-weight: bold;
+          font-weight: 800;
+          font-style: normal;
           font-size: 1.5rem;
           line-height: 3rem;
           text-align: center;
@@ -331,6 +328,7 @@ html {
         display: flex;
         margin-bottom: 5rem; }
         .our-advantages .advantages-discount .advantages .advantage .advantages-text {
+          font-weight: 400;
           font-style: normal;
           font-size: 1.8rem;
           line-height: 2.4rem;
@@ -354,7 +352,8 @@ html {
             box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     border-radius: 10px; }
     .our-advantages .discount .discount-title {
-      font-weight: bold;
+      font-weight: 800;
+      font-style: normal;
       font-size: 2.4rem;
       line-height: 3.6rem;
       letter-spacing: 0.15em;
@@ -362,7 +361,8 @@ html {
       color: #FFFFFF;
       margin-bottom: 12rem; }
     .our-advantages .discount .discount-text {
-      font-weight: bold;
+      font-weight: 800;
+      font-style: normal;
       color: rgba(255, 255, 255, 0.8);
       font-size: 2.4rem;
       line-height: 3.6rem;
@@ -406,10 +406,10 @@ html {
     .nav .nav-container .contacts {
       margin-top: 1rem; }
 
-  .types-of-works .work-container .work-icon {
+  .types-of-works .work-blocks .work-container .work-block .work-icon {
     width: 8rem;
     height: 8rem; }
-  .types-of-works .work-container .work-text {
+  .types-of-works .work-blocks .work-container .work-block .work-text {
     font-size: 1.8rem; }
 
   .for-who .who-container .who-card1,
@@ -460,17 +460,38 @@ html {
     .nav .menu-burger {
       display: block; }
 
-  .header-text {
-    font-size: 2.5rem; } }
+  .header-block .header-text {
+    font-size: 2.5rem; }
+
+  .types-of-works .work-blocks .work-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto; }
+    .types-of-works .work-blocks .work-container .work-blocks1 {
+      margin-right: 0; }
+    .types-of-works .work-blocks .work-container .work-block .work-icon {
+      width: 6rem;
+      height: 6rem; }
+    .types-of-works .work-blocks .work-container .work-block .work-text {
+      font-size: 1.8rem; }
+  .types-of-works .work-blocks .work-text1 {
+    font-size: 4rem; } }
 @media (max-width: 768px) {
   .types-of-works .work-container {
     padding: 5rem 2rem 0; }
-    .types-of-works .work-container .work-icon {
+    .types-of-works .work-container .work-block .work-icon {
       width: 5rem;
       height: 4rem;
       margin-right: 1rem; }
-    .types-of-works .work-container .work-text {
-      font-size: 1.4rem; } }
+    .types-of-works .work-container .work-block .work-text {
+      font-size: 1.8rem; } }
 @media (max-width: 576px) {
   .title {
     font-size: 1.8rem;
@@ -493,11 +514,10 @@ html {
     height: 100vh;
     background-attachment: scroll;
     background-size: cover; }
-
-  .header-text {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    padding: 20rem 0; }
+    .header-block .header-text {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      padding: 20rem 0; }
 
   .types-of-works .work-container {
     width: 95%;
@@ -560,7 +580,7 @@ html {
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d .header-text {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 4rem;
     text-align: center;
     letter-spacing: 0.25em;
@@ -736,6 +756,10 @@ html {
       padding: 30vh 0 3vh; }
     .header-block-d span {
       font-size: 2rem; }
+
+  .title {
+    font-size: 1.8rem;
+    padding: 5rem 0 3rem; }
 
   .texts .disinfection-images .disinfection-image {
     width: 5rem;
