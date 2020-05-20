@@ -508,13 +508,14 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
     .types-of-works .work-container .work-icon {
-      width: 5rem;
-      height: 5rem;
-      margin-right: 2rem; }
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1.5rem; }
     .types-of-works .work-container .work-text {
       font-size: 1.4rem; }
   .types-of-works .work-text1 {
-    font-size: 3.6rem; }
+    font-size: 3rem;
+    line-height: 4rem; }
 
   .for-who .who-container .who-card1,
   .for-who .who-container .who-card2,
