@@ -80,6 +80,7 @@
       border-radius: 10px 50px;
       padding: 3rem;
 
+
       h2 {
         font-weight: 800;
         font-size: 1.8rem;
@@ -104,7 +105,8 @@
 
 // Блок услуг
 .services {
-background: linear-gradient(180deg, #EEF0F7 0%, #ACACB8 100%);
+  background: linear-gradient(180deg, #EEF0F7 0%, #ACACB8 100%);
+
   .services-container {
     width: 80%;
     display: flex;
