@@ -99,7 +99,7 @@ html {
   font-weight: 800;
   font-style: normal;
   font-size: 3rem;
-  line-height: 4.4rem;
+  line-height: 4.8rem;
   text-align: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -575,24 +575,24 @@ html {
       width: 40%;
       margin: 0 0 5rem; } }
 .header-block-d {
-  height: 50rem;
   background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d .header-text {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 4rem;
     text-align: center;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20vh 0 3vh; }
+    padding: 20rem 0 3rem; }
   .header-block-d span {
     display: block;
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    padding-bottom: 20rem; }
 
 .texts {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(115, 115, 134, 0.36)), to(rgba(230, 234, 246, 0.6)));
@@ -631,14 +631,14 @@ html {
       border-radius: 10px 50px;
       padding: 3rem; }
       .texts .disinfection-text-container .disinfection-what h2 {
-        font-weight: 500;
+        font-weight: 800;
         font-size: 1.8rem;
         line-height: 2.7rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
         margin-bottom: 2rem; }
       .texts .disinfection-text-container .disinfection-what .disinfection-what-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem; }
     .texts .disinfection-text-container .disinfection-methods {
@@ -648,14 +648,14 @@ html {
       border-radius: 10px 50px;
       padding: 3rem; }
       .texts .disinfection-text-container .disinfection-methods h2 {
-        font-weight: 500;
+        font-weight: 800;
         font-size: 1.8rem;
         line-height: 2.7rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
         margin-bottom: 2rem; }
       .texts .disinfection-text-container .disinfection-methods .disinfection-methods-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem; }
         .texts .disinfection-text-container .disinfection-methods .disinfection-methods-text span {
@@ -707,7 +707,7 @@ html {
   .questions .questions-container {
     width: 60%;
     margin: auto;
-    padding-bottom: 5rem; }
+    padding-bottom: 10rem; }
     .questions .questions-container .question1,
     .questions .questions-container .question2,
     .questions .questions-container .question3,
@@ -725,7 +725,21 @@ html {
       font-size: 2.4rem;
       line-height: 3.6rem; }
 
+@media (max-width: 1200px) {
+  .header-block-d .header-text {
+    font-size: 3.5rem; }
+  .header-block-d span {
+    font-size: 2.5rem; }
+
+  .texts .disinfection-images .disinfection-image {
+    width: 15rem;
+    height: 15rem; } }
 @media (max-width: 992px) {
+  .header-block-d .header-text {
+    font-size: 3rem; }
+  .header-block-d span {
+    font-size: 2rem; }
+
   .texts .disinfection-text-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -734,6 +748,11 @@ html {
     .texts .disinfection-text-container .disinfection-what {
       margin: 0 0 5rem; } }
 @media (max-width: 768px) {
+  .header-block-d .header-text {
+    font-size: 2.5rem; }
+    .header-block-d .header-text span {
+      font-size: 1.8rem; }
+
   .texts .disinfection-images .disinfection-image {
     width: 10rem;
     height: 10rem; }
@@ -748,17 +767,17 @@ html {
   .questions .questions-container {
     width: 80%; } }
 @media (max-width: 576px) {
-  .header-block-d {
-    height: 50rem; }
-    .header-block-d .header-text {
-      font-size: 3rem;
-      line-height: 4rem;
-      padding: 30vh 0 3vh; }
-    .header-block-d span {
-      font-size: 2rem; }
+  .header-block-d .header-text {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    padding: 10rem 0 3rem; }
+  .header-block-d span {
+    font-size: 1.5rem;
+    padding-bottom: 10rem; }
 
   .title {
     font-size: 1.8rem;
+    line-height: 3rem;
     padding: 5rem 0 3rem; }
 
   .texts .disinfection-images .disinfection-image {

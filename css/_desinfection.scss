@@ -1,17 +1,16 @@
 .header-block-d {
-  height: 50rem;
   background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover;
 
   .header-text {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 4rem;
     text-align: center;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20vh 0 3vh;
+    padding: 20rem 0 3rem;
   }
 
   span {
@@ -20,8 +19,10 @@
     font-size: 2.5rem;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 20rem;
   }
 }
+
 
 // Блок текста
 .texts {
@@ -58,7 +59,7 @@
       padding: 3rem;
 
       h2 {
-        font-weight: 500;
+        font-weight: 800;
         font-size: 1.8rem;
         line-height: 2.7rem;
         letter-spacing: 0.25em;
@@ -67,7 +68,7 @@
       }
 
       .disinfection-what-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
       }
@@ -80,7 +81,7 @@
       padding: 3rem;
 
       h2 {
-        font-weight: 500;
+        font-weight: 800;
         font-size: 1.8rem;
         line-height: 2.7rem;
         letter-spacing: 0.25em;
@@ -89,7 +90,7 @@
       }
 
       .disinfection-methods-text {
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
 
@@ -144,7 +145,7 @@
   .questions-container {
     width: 60%;
     margin: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 
     .question1,
     .question2,
@@ -168,7 +169,39 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .header-block-d {
+    .header-text {
+      font-size: 3.5rem;
+    }
+
+    span {
+      font-size: 2.5rem;
+    }
+  }
+
+  .texts {
+
+    .disinfection-images {
+      .disinfection-image {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
+    .header-block-d {
+      .header-text {
+        font-size: 3rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
+
   .texts {
 
     .disinfection-text-container {
@@ -182,6 +215,17 @@
 }
 
 @media (max-width: 768px) {
+
+  .header-block-d {
+    .header-text {
+      font-size: 2.5rem;
+
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
   .texts {
 
     .disinfection-images {
@@ -221,21 +265,22 @@
 
 @media (max-width: 576px) {
   .header-block-d {
-    height: 50rem;
 
     .header-text {
-      font-size: 3rem;
+      font-size: 2.2rem;
       line-height: 4rem;
-      padding: 30vh 0 3vh;
+      padding: 10rem 0 3rem;
     }
 
     span {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      padding-bottom: 10rem;
     }
   }
 
   .title {
     font-size: 1.8rem;
+    line-height: 3rem;
     padding: 5rem 0 3rem;
   }
 
