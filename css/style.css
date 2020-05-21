@@ -849,7 +849,7 @@ html {
     height: 20rem; }
 
 .questions {
-  background: url(../img/pest_control1.png) center center no-repeat;
+  background: url(../img/pest_control1.png) 100% 10% no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
