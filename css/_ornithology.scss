@@ -1,5 +1,5 @@
-.header-block-d2 {
-  background: url(../img/deratization.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+.header-block-d3 {
+  background: url(../img/ornithology.jpg) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover;
 
@@ -25,14 +25,14 @@
 
 // Блок текста
 .texts {
-  .deratization-images {
+  .ornithology-images {
     width: 80%;
     margin: 0 auto;
     padding: 8rem 0;
     display: flex;
     justify-content: space-between;
 
-    .deratization-image {
+    .ornithology-image {
       width: 25rem;
       height: 20rem;
     }
@@ -41,12 +41,12 @@
 
 // Блок вопросов
 .questions {
-  background: url(../img/deratization1.png) no-repeat;
+  background: url(../img/ornithology1.png) no-repeat;
   background-size: cover;
 }
 
 @media (max-width: 992px) {
-  .header-block-d2 {
+  .header-block-d3 {
     .header-text {
       font-size: 3rem;
     }
@@ -58,11 +58,11 @@
 
   .texts {
 
-    .deratization-images {
+    .ornithology-images {
       padding: 5rem 0;
 
 
-      .deratization-image {
+      .ornithology-image {
         width: 15rem;
         height: 12rem;
       }
@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
 
-  .header-block-d2 {
+  .header-block-d3 {
     .header-text {
       font-size: 2.5rem;
 
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 576px) {
-  .header-block-d2 {
+  .header-block-d3 {
 
     .header-text {
       font-size: 2.2rem;
@@ -106,14 +106,14 @@
 
   .texts {
 
-    .deratization-images {
-      padding: 3rem 0;
+    .ornithology-images {
       width: 95%;
+      padding: 3rem 0;
 
 
-      .deratization-image {
+      .ornithology-image {
         width: 7rem;
-        height: 7rem;
+        height: 6rem;
         margin: 0 1rem;
       }
     }
