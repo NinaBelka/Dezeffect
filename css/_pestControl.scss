@@ -1,0 +1,133 @@
+.header-block-d1 {
+  background: url(../img/pest_control.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+  background-blend-mode: darken;
+  background-size: cover;
+
+  .header-text {
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 30rem 0 3rem;
+  }
+
+  span {
+    display: block;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 30rem;
+  }
+}
+
+// Блок текста
+.texts {
+  .pest-control-images {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .pest-control-image {
+      width: 25rem;
+      height: 20rem;
+    }
+  }
+}
+
+// Блок вопросов
+.questions {
+  background: url(../img/pest_control1.png) center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .header-block-d1 {
+    .header-text {
+      font-size: 3rem;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .texts {
+
+    .pest-control-images {
+      padding: 5rem 0;
+
+
+      .pest-control-image {
+        width: 15rem;
+        height: 12rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header-block-d1 {
+    .header-text {
+      font-size: 2.5rem;
+
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header-block-d1 {
+
+    .header-text {
+      font-size: 2.2rem;
+      line-height: 4rem;
+      padding: 10rem 0 3rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      padding-bottom: 10rem;
+    }
+  }
+
+  .title {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 5rem 0 3rem;
+  }
+
+  .texts {
+
+    .pest-control-images {
+      padding: 3rem 0;
+
+
+      .pest-control-image {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 1rem;
+      }
+    }
+
+    .disinfection-text-container {
+      width: 95%;
+
+      .disinfection-what {
+        box-shadow: none;
+      }
+
+      .disinfection-methods {
+        box-shadow: none;
+      }
+    }
+  }
+
+}

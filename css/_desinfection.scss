@@ -26,7 +26,7 @@
 
 // Блок текста
 .texts {
-  background: linear-gradient(180deg, rgba(115, 115, 134, 0.36) 0%, rgba(230, 234, 246, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(115, 115, 134, 0.6) 0%, rgba(230, 234, 246, 0.6) 100%);
 
   .disinfection-images {
     display: flex;
@@ -104,8 +104,7 @@
 
 // Блок услуг
 .services {
-  background: linear-gradient(180deg, #EEF0F7 0%, #CDCDD4 100%);
-
+background: linear-gradient(180deg, #EEF0F7 0%, #ACACB8 100%);
   .services-container {
     width: 80%;
     display: flex;
@@ -192,15 +191,15 @@
 }
 
 @media (max-width: 992px) {
-    .header-block-d {
-      .header-text {
-        font-size: 3rem;
-      }
-
-      span {
-        font-size: 2rem;
-      }
+  .header-block-d {
+    .header-text {
+      font-size: 3rem;
     }
+
+    span {
+      font-size: 2rem;
+    }
+  }
 
   .texts {
 
