@@ -74,7 +74,7 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 45vh 0 20vh;
+    padding: 35vh 0 30vh;
   }
 
   .down_arrow {
@@ -542,25 +542,27 @@
   }
 
   .types-of-works {
-    .work-container {
-      width: 95%;
-      flex-direction: column;
-      padding: 5rem 0.5rem 0;
+    .work-blocks {
+      .work-container {
+        width: 95%;
+        flex-direction: column;
+        padding: 5rem 0.5rem 0;
 
-      .work-icon {
-        width: 4rem;
-        height: 4rem;
-        margin-right: 1.5rem;
+        .work-icon {
+          width: 4rem;
+          height: 4rem;
+          margin-right: 1.5rem;
+        }
+
+        .work-text {
+          font-size: 1.4rem;
+        }
       }
 
-      .work-text {
-        font-size: 1.4rem;
+      .work-text1 {
+        font-size: 3rem;
+        line-height: 3rem;
       }
-    }
-
-    .work-text1 {
-      font-size: 3rem;
-      line-height: 4rem;
     }
   }
 
