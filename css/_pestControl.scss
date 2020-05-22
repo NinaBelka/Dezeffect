@@ -43,33 +43,6 @@
 .questions-d1 {
   background: url(../img/pest_control1.png) no-repeat;
   background-size: cover;
-
-  .questions-container {
-    width: 60%;
-    margin: auto;
-    padding-bottom: 10rem;
-
-    .question1,
-    .question2,
-    .question3,
-    .question4 {
-      font-weight: 600;
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-      padding-bottom: 2rem;
-    }
-
-    .answer1,
-    .answer2,
-    .answer3,
-    .answer4 {
-      display: none;
-      font-weight: normal;
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-    }
-  }
-
 }
 
 @media (max-width: 992px) {
@@ -106,13 +79,6 @@
       span {
         font-size: 1.8rem;
       }
-    }
-  }
-
-  .questions-d1 {
-
-    .questions-container {
-      width: 80%;
     }
   }
 
@@ -164,33 +130,5 @@
       }
     }
   }
-
-  .questions-d1 {
-
-    .questions-container {
-      width: 95%;
-
-      .question1,
-      .question2,
-      .question3,
-      .question4 {
-        font-weight: 600;
-        font-size: 1.6rem;
-        line-height: 3rem;
-        padding-bottom: 1rem;
-      }
-
-      .answer1,
-      .answer2,
-      .answer3,
-      .answer4 {
-        display: none;
-        font-weight: normal;
-        font-size: 1.6rem;
-        line-height: 3rem;
-      }
-    }
-  }
-
 
 }
