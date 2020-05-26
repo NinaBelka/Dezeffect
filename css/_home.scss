@@ -1,6 +1,9 @@
 // Шапка 
 .nav {
-  background: #4F4F65;
+  background: #B8D0DF;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
 
   .nav-container {
     display: flex;
@@ -26,7 +29,7 @@
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.6);
+        color: #0B445E;
         cursor: pointer;
 
         &:hover {
@@ -39,21 +42,7 @@
       text-align: right;
       margin-top: 2rem;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.8);
-
-    }
-  }
-
-  .menu-burger {
-    display: none;
-    margin-top: 2rem;
-
-    span {
-      display: block;
-      width: 2.5rem;
-      height: 0.2rem;
-      margin-bottom: 0.5rem;
-      background-color: white;
+      color: #0B445E;
     }
   }
 }
@@ -77,7 +66,7 @@
     padding: 35vh 0 30vh;
   }
 
-  .down_arrow {
+  .down-arrow {
     display: block;
     text-align: center;
     margin: auto;
@@ -99,7 +88,6 @@
   text-align: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #000000;
   padding: 10rem 0 8rem;
 }
 
@@ -118,7 +106,6 @@
 
     .work-blocks1 {
       margin-right: 2rem;
-
     }
 
     .work-block {
@@ -138,7 +125,7 @@
         font-weight: 600;
         font-style: normal;
         font-size: 2.5rem;
-        color: #000000;
+        color: #0B445E;
         text-align: left;
       }
     }
@@ -146,6 +133,7 @@
 }
 
 .work-text1 {
+  display: block;
   font-weight: 800;
   font-style: normal;
   font-size: 4.8rem;
@@ -205,7 +193,6 @@
         }
 
         .card-text2 {
-          display: none;
           font-weight: 800;
           font-style: normal;
           font-size: 1.5rem;
@@ -217,16 +204,7 @@
       }
 
       &:hover {
-        color: #FFFFFF;
         background-blend-mode: hard-light;
-
-        .card-text1 {
-          color: #FFFFFF;
-        }
-
-        .card-text2 {
-          display: block;
-        }
       }
     }
   }
@@ -234,7 +212,7 @@
 
 // Наши преимущества
 .our-advantages {
-  background: url(../img/textura.png) no-repeat;
+  background: #8397BD;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 5rem;
@@ -330,8 +308,6 @@
     margin-right: 5rem;
   }
 }
-
-// Подвал
 
 @media (max-width: 1200px) {
   .nav {
@@ -435,10 +411,6 @@
     .contacts {
       margin-top: 1rem;
     }
-
-    .menu-burger {
-      display: block;
-    }
   }
 
   .header-block {
@@ -521,10 +493,6 @@
       .contacts {
         margin-top: 1rem;
         font-size: 0.8rem;
-      }
-
-      .menu-burger {
-        display: block;
       }
     }
   }

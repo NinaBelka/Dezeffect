@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Oswald';
   src: local('Oswald Regular'),
-  local('Oswald-Regular'),
-  url('../fonts/Oswaldregular.woff2') format('woff2'),
-  url('../fonts/Oswaldregular.woff') format('woff'),
-  url('../fonts/Oswaldregular.ttf') format('truetype');
+    local('Oswald-Regular'),
+    url('../fonts/Oswaldregular.woff2') format('woff2'),
+    url('../fonts/Oswaldregular.woff') format('woff'),
+    url('../fonts/Oswaldregular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -12,10 +12,10 @@
 @font-face {
   font-family: 'Oswald';
   src: local('Oswald DemiBold'),
-  local('Oswald-DemiBold'),
-  url('../fonts/Oswalddemibold.woff2') format('woff2'),
-  url('../fonts/Oswalddemibold.woff') format('woff'),
-  url('../fonts/Oswalddemibold.ttf') format('truetype');
+    local('Oswald-DemiBold'),
+    url('../fonts/Oswalddemibold.woff2') format('woff2'),
+    url('../fonts/Oswalddemibold.woff') format('woff'),
+    url('../fonts/Oswalddemibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -23,10 +23,10 @@
 @font-face {
   font-family: 'Oswald';
   src: local('Oswald Heavy'),
-  local('Oswald-Heavy'),
-  url('../fonts/Oswaldheavy.woff2') format('woff2'),
-  url('../fonts/Oswaldheavy.woff') format('woff'),
-  url('../fonts/Oswaldheavy.ttf') format('truetype');
+    local('Oswald-Heavy'),
+    url('../fonts/Oswaldheavy.woff2') format('woff2'),
+    url('../fonts/Oswaldheavy.woff') format('woff'),
+    url('../fonts/Oswaldheavy.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -43,6 +43,7 @@
 
 html {
   font-size: 10px;
+  color: #0B445E;
 }
 
 @import "_home";
@@ -52,6 +53,3 @@ html {
 @import "_ornithology";
 @import "_deodorization";
 @import "_treatment";
-
-
-

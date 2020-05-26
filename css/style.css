@@ -22,10 +22,15 @@
           box-sizing: border-box; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  color: #0B445E; }
 
 .nav {
-  background: #4F4F65; }
+  background: #B8D0DF;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%; }
   .nav .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,7 +56,7 @@ html {
         font-style: normal;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.6);
+        color: #0B445E;
         cursor: pointer; }
         .nav .nav-container .links .header-link:hover {
           color: #FFFFFF; }
@@ -59,16 +64,7 @@ html {
       text-align: right;
       margin-top: 2rem;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.8); }
-  .nav .menu-burger {
-    display: none;
-    margin-top: 2rem; }
-    .nav .menu-burger span {
-      display: block;
-      width: 2.5rem;
-      height: 0.2rem;
-      margin-bottom: 0.5rem;
-      background-color: white; }
+      color: #0B445E; }
 
 .header-block {
   height: 100vh;
@@ -85,7 +81,7 @@ html {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 35vh 0 30vh; }
-  .header-block .down_arrow {
+  .header-block .down-arrow {
     display: block;
     text-align: center;
     margin: auto;
@@ -103,7 +99,6 @@ html {
   text-align: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #000000;
   padding: 10rem 0 8rem; }
 
 .work-blocks {
@@ -144,10 +139,11 @@ html {
         font-weight: 600;
         font-style: normal;
         font-size: 2.5rem;
-        color: #000000;
+        color: #0B445E;
         text-align: left; }
 
 .work-text1 {
+  display: block;
   font-weight: 800;
   font-style: normal;
   font-size: 4.8rem;
@@ -249,7 +245,6 @@ html {
         .for-who .who-container .who-card10 .card-text .card-text2,
         .for-who .who-container .who-card11 .card-text .card-text2,
         .for-who .who-container .who-card12 .card-text .card-text2 {
-          display: none;
           font-weight: 800;
           font-style: normal;
           font-size: 1.5rem;
@@ -269,37 +264,10 @@ html {
       .for-who .who-container .who-card10:hover,
       .for-who .who-container .who-card11:hover,
       .for-who .who-container .who-card12:hover {
-        color: #FFFFFF;
         background-blend-mode: hard-light; }
-        .for-who .who-container .who-card1:hover .card-text1,
-        .for-who .who-container .who-card2:hover .card-text1,
-        .for-who .who-container .who-card3:hover .card-text1,
-        .for-who .who-container .who-card4:hover .card-text1,
-        .for-who .who-container .who-card5:hover .card-text1,
-        .for-who .who-container .who-card6:hover .card-text1,
-        .for-who .who-container .who-card7:hover .card-text1,
-        .for-who .who-container .who-card8:hover .card-text1,
-        .for-who .who-container .who-card9:hover .card-text1,
-        .for-who .who-container .who-card10:hover .card-text1,
-        .for-who .who-container .who-card11:hover .card-text1,
-        .for-who .who-container .who-card12:hover .card-text1 {
-          color: #FFFFFF; }
-        .for-who .who-container .who-card1:hover .card-text2,
-        .for-who .who-container .who-card2:hover .card-text2,
-        .for-who .who-container .who-card3:hover .card-text2,
-        .for-who .who-container .who-card4:hover .card-text2,
-        .for-who .who-container .who-card5:hover .card-text2,
-        .for-who .who-container .who-card6:hover .card-text2,
-        .for-who .who-container .who-card7:hover .card-text2,
-        .for-who .who-container .who-card8:hover .card-text2,
-        .for-who .who-container .who-card9:hover .card-text2,
-        .for-who .who-container .who-card10:hover .card-text2,
-        .for-who .who-container .who-card11:hover .card-text2,
-        .for-who .who-container .who-card12:hover .card-text2 {
-          display: block; }
 
 .our-advantages {
-  background: url(../img/textura.png) no-repeat;
+  background: #8397BD;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 5rem; }
@@ -457,8 +425,6 @@ html {
       display: none; }
     .nav .contacts {
       margin-top: 1rem; }
-    .nav .menu-burger {
-      display: block; }
 
   .header-block .header-text {
     font-size: 2.5rem; }
@@ -507,8 +473,6 @@ html {
       .nav .nav-container .contacts {
         margin-top: 1rem;
         font-size: 0.8rem; }
-      .nav .nav-container .menu-burger {
-        display: block; }
 
   .header-block {
     height: 100vh;
@@ -574,6 +538,20 @@ html {
     .customer-container .customer {
       width: 40%;
       margin: 0 0 5rem; } }
+.menu-link {
+  display: none;
+  margin-right: 1.8rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #0B445E;
+  cursor: pointer; }
+  .menu-link:hover {
+    color: #FFFFFF; }
+
 .header-block-d {
   background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
@@ -625,10 +603,7 @@ html {
     padding-bottom: 5rem; }
     .texts .disinfection-text-container .disinfection-what {
       margin-right: 5rem;
-      background: #8397BD;
-      -webkit-box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-              box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px 50px;
+      background: #B8D0DF;
       padding: 3rem; }
       .texts .disinfection-text-container .disinfection-what h2 {
         font-weight: 800;
@@ -642,10 +617,7 @@ html {
         font-size: 1.6rem;
         line-height: 2.4rem; }
     .texts .disinfection-text-container .disinfection-methods {
-      background: #8397BD;
-      -webkit-box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-              box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px 50px;
+      background: #B8D0DF;
       padding: 3rem; }
       .texts .disinfection-text-container .disinfection-methods h2 {
         font-weight: 800;
@@ -710,10 +682,10 @@ html {
   margin: auto;
   padding-bottom: 10rem; }
   .questions-container .question {
+    padding: 1rem 3rem;
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    padding-bottom: 2rem;
     transition: background-color 0.2s linear;
     -webkit-transition: background-color 0.2s linear;
     -moz-transition: background-color 0.2s linear;
@@ -733,12 +705,18 @@ html {
     .questions-container .question.is-open::after {
       content: "-"; }
     .questions-container .question.is-open {
-      background-color: #80f0ab; }
+      background: #8397BD;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px; }
   .questions-container .answer {
     font-weight: normal;
     font-size: 2rem;
     line-height: 3.6rem;
     margin-bottom: 3rem;
+    padding: 0 3rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
@@ -757,6 +735,9 @@ html {
     width: 15rem;
     height: 15rem; } }
 @media (max-width: 992px) {
+  .menu-link {
+    display: block; }
+
   .header-block-d .header-text {
     font-size: 3rem; }
   .header-block-d span {
@@ -836,6 +817,14 @@ html {
       font-weight: normal;
       font-size: 1.6rem;
       line-height: 3rem; } }
+@media (max-width: 360px) {
+  .menu-link {
+    margin-right: 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none; } }
 .header-block-d1 {
   background: url(../img/pest_control.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
