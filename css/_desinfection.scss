@@ -48,7 +48,7 @@
 
   .disinfection-images {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     .disinfection-image {
       width: 20rem;
@@ -150,6 +150,38 @@
       }
     }
   }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0 10rem;
+
+    .btn {
+      background: #B8D0DF;
+      border: 1px solid #737386;
+      border-radius: 5px;
+      font-size: 1.8rem;
+      color: #0B445E;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      margin-right: 3rem;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .prices-btn a {
+      text-decoration: none;
+      color: #0B445E;
+    }
+  }
 }
 
 // Блок вопросов
@@ -182,11 +214,11 @@
     }
 
     &::after {
-      content: "+";
+      content: url(/img/down.svg);
     }
 
     &.is-open::after {
-      content: "-";
+      content: url(/img/up.svg);
     }
 
     &.is-open {
@@ -197,7 +229,7 @@
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
-}
+    }
   }
 
   .answer {
@@ -215,6 +247,104 @@
     -o-transition: max-height 0.4s ease-in-out;
   }
 }
+
+// Модальное окно Оформить заказ
+.window {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .window-content {
+    position: fixed;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    padding: 4rem;
+  }
+
+  .window-close {
+    position: absolute;
+    top: -1.6rem;
+    right: -3rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  .window-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .window-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .window-form {
+    .window-form-input {
+      display: block;
+      width: 100%;
+      align-items: center;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .window-form-label {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 1.2rem;
+      background-color: white;
+      padding: 0 0.5rem;
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+      background: #B8D0DF;
+      border: 1px solid #737386;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+  }
+
+}
+
 
 @media (max-width: 1200px) {
   .header-block-d {

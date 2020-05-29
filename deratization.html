@@ -34,9 +34,12 @@
 
   <section class="texts">
     <div class="deratization-images">
-      <img class="deratization-image" src="./img/mouse.png" alt="mouse" loading="lazy">
-      <img class="deratization-image" src="./img/rat.png" alt="rat" loading="lazy">
-      <img class="deratization-image" src="./img/mole.png" alt="mole" loading="lazy">
+      <img class="deratization-image" src="./img/mouse.png" alt="mouse"
+        loading="lazy">
+      <img class="deratization-image" src="./img/rat.png" alt="rat"
+        loading="lazy">
+      <img class="deratization-image" src="./img/mole.png" alt="mole"
+        loading="lazy">
     </div>
 
     <div class="disinfection-text-container">
@@ -153,7 +156,8 @@
 
   <section class="services">
     <div class="services-container">
-      <h2 class="title" id="servicesTitle">«Дезэффект» оказывает следующие услуги
+      <h2 class="title" id="servicesTitle">«Дезэффект» оказывает следующие
+        услуги
         по дезинфекции:
       </h2>
 
@@ -180,6 +184,14 @@
           нахождения в помещении трупа</div>
       </div>
     </div>
+
+    <div class="buttons">
+      <button class="window-btn btn"> Оформить заказ </button>
+      <button class="prices-btn btn">
+        <a download href="prices.jpg"> Скачать прайс </a>
+      </button>
+    </div>
+
   </section>
 
   <section class="questions-d2">
@@ -189,15 +201,18 @@
         Сможете ли обезопасить от коронавируса?
       </div>
       <div class="answer">
-        Да, сможем произвести обработку помещений как от коронавируса, так и других
-        вирусных форм. Однако, не забывайте про меры предосторожности в общественных
+        Да, сможем произвести обработку помещений как от коронавируса, так и
+        других
+        вирусных форм. Однако, не забывайте про меры предосторожности в
+        общественных
         местах и правилах соблюдения личной гигиены.
       </div>
       <div class="question">
         Ваши препараты безопасны для детей?
       </div>
       <div class="answer">
-        Да, все препараты обладают 4 классом безопасности (полностью безопасны для
+        Да, все препараты обладают 4 классом безопасности (полностью безопасны
+        для
         людей и домашних питомцев).
       </div>
       <div class="question">
@@ -220,18 +235,33 @@
     </div>
   </section>
 
-
-  <footer class="nav">
-    <div class="nav-container">
-      <img class="logo" src="./img/logo.svg" alt="logo">
-      <div class="contacts">
-        <div class="email"> deseffect@gmail.com </div>
-        <div class="tel"> +375 29 777 77 77 </div>
+  <!-- Модальное окно оформить заказ-->
+  <div class="window">
+    <div class="window-dialog">
+      <div class="window-content">
+        <button class="window-close">&times;</button>
+        <h4 class="window-header">
+          Заинтересовало?
+        </h4>
+        <p class="window-text"> Оставьте контактные данные <br>для связи </p>
+        <div class="window-form">
+          <form action="#">
+            <label class="window-form-label" for="#"> Ваше имя</label>
+            <input class="window-form-input" type="text">
+            <label class="window-form-label" for="#"> Номер телефона</label>
+            <input class="window-form-input" type="text">
+            <label class="window-form-label" for="#"> Сообщение</label>
+            <textarea class="window-form-input" rows="5"></textarea>
+            <button class="window-form-btn btn" type="submit">Оставьте
+              заявку</button>
+          </form>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 
