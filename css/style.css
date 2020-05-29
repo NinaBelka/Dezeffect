@@ -1215,9 +1215,9 @@ html {
   background-size: cover; }
 
 @media (max-width: 992px) {
-  .header-block-d1 .header-text {
+  .header-block-d4 .header-text {
     font-size: 3rem; }
-  .header-block-d1 span {
+  .header-block-d4 span {
     font-size: 2rem; }
 
   .texts .pest-control-images {
@@ -1226,16 +1226,16 @@ html {
       width: 15rem;
       height: 12rem; } }
 @media (max-width: 768px) {
-  .header-block-d1 .header-text {
+  .header-block-d4 .header-text {
     font-size: 2.5rem; }
-    .header-block-d1 .header-text span {
+    .header-block-d4 .header-text span {
       font-size: 1.8rem; } }
 @media (max-width: 576px) {
-  .header-block-d1 .header-text {
+  .header-block-d4 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
     padding: 10rem 0 3rem; }
-  .header-block-d1 span {
+  .header-block-d4 span {
     font-size: 1.5rem;
     padding-bottom: 10rem; }
 
@@ -1297,9 +1297,9 @@ html {
   background-size: cover; }
 
 @media (max-width: 992px) {
-  .header-block-d1 .header-text {
+  .header-block-d5 .header-text {
     font-size: 3rem; }
-  .header-block-d1 span {
+  .header-block-d5 span {
     font-size: 2rem; }
 
   .texts .pest-control-images {
@@ -1308,16 +1308,16 @@ html {
       width: 15rem;
       height: 12rem; } }
 @media (max-width: 768px) {
-  .header-block-d1 .header-text {
+  .header-block-d5 .header-text {
     font-size: 2.5rem; }
-    .header-block-d1 .header-text span {
+    .header-block-d5 .header-text span {
       font-size: 1.8rem; } }
 @media (max-width: 576px) {
-  .header-block-d1 .header-text {
+  .header-block-d5 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
     padding: 10rem 0 3rem; }
-  .header-block-d1 span {
+  .header-block-d5 span {
     font-size: 1.5rem;
     padding-bottom: 10rem; }
 
