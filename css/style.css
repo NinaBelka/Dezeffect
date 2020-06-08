@@ -878,8 +878,7 @@ html {
     font-size: 1rem;
     margin-top: 2rem;
     font-style: normal;
-    letter-spacing: 0;
-    text-transform: none; }
+    letter-spacing: 0; }
 
   .buttons {
     -webkit-box-orient: vertical;
