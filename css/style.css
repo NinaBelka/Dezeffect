@@ -671,7 +671,8 @@ html {
     .questions-container .question:hover {
       font-size: 2.6rem; }
     .questions-container .question::after {
-      content: url(/img/down.svg); }
+      content: url(/img/down.svg);
+      margin-left: 3rem; }
     .questions-container .question.is-open::after {
       content: url(/img/up.svg); }
     .questions-container .question.is-open {
@@ -846,25 +847,29 @@ html {
 
   .services .services-container .services-block {
     width: 95%; }
+  .services .buttons {
+    width: 95%;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 7rem 0 10rem; }
+    .services .buttons .btn {
+      margin-right: 0;
+      font-size: 14px; }
 
   .questions-container {
     width: 95%; }
-    .questions-container .question1,
-    .questions-container .question2,
-    .questions-container .question3,
-    .questions-container .question4 {
+    .questions-container .question {
       font-weight: 600;
       font-size: 1.6rem;
-      line-height: 3rem;
+      line-height: 2rem;
       padding-bottom: 1rem; }
-    .questions-container .answer1,
-    .questions-container .answer2,
-    .questions-container .answer3,
-    .questions-container .answer4 {
-      display: none;
-      font-weight: normal;
+      .questions-container .question:hover {
+        font-size: 1.6rem; }
+    .questions-container .answer {
       font-size: 1.6rem;
-      line-height: 3rem; } }
+      line-height: 2.4rem; } }
 @media (max-width: 360px) {
   .menu-link {
     margin-right: 0;
@@ -872,7 +877,15 @@ html {
     margin-top: 2rem;
     font-style: normal;
     letter-spacing: 0;
-    text-transform: none; } }
+    text-transform: none; }
+
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .buttons .btn {
+      margin-bottom: 20px; } }
 .header-block-d1 {
   background: url(../img/pest_control.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
