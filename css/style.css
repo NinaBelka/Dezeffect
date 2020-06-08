@@ -30,6 +30,7 @@ html {
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
   position: fixed;
+  z-index: 99;
   width: 100%; }
   .nav .nav-container {
     display: -webkit-box;
@@ -154,7 +155,8 @@ html {
 
 .for-who {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 79, 101, 0.8)), color-stop(52.02%, #8397BD), color-stop(52.03%, #8397BD), to(#E6EAF6));
-  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%); }
+  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%);
+  z-index: -1; }
   .for-who .who-container {
     width: 100%;
     display: -webkit-box;
@@ -163,18 +165,8 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     flex-wrap: wrap; }
-    .for-who .who-container .who-card1,
-    .for-who .who-container .who-card2,
-    .for-who .who-container .who-card3,
-    .for-who .who-container .who-card4,
-    .for-who .who-container .who-card5,
-    .for-who .who-container .who-card6,
-    .for-who .who-container .who-card7,
-    .for-who .who-container .who-card8,
-    .for-who .who-container .who-card9,
-    .for-who .who-container .who-card10,
-    .for-who .who-container .who-card11,
-    .for-who .who-container .who-card12 {
+    .for-who .who-container .who-card {
+      position: relative;
       width: 25%;
       height: 35rem;
       display: -webkit-box;
@@ -188,21 +180,30 @@ html {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      background-blend-mode: darken;
-      background-size: contain;
       cursor: pointer; }
-      .for-who .who-container .who-card1 .card-text,
-      .for-who .who-container .who-card2 .card-text,
-      .for-who .who-container .who-card3 .card-text,
-      .for-who .who-container .who-card4 .card-text,
-      .for-who .who-container .who-card5 .card-text,
-      .for-who .who-container .who-card6 .card-text,
-      .for-who .who-container .who-card7 .card-text,
-      .for-who .who-container .who-card8 .card-text,
-      .for-who .who-container .who-card9 .card-text,
-      .for-who .who-container .who-card10 .card-text,
-      .for-who .who-container .who-card11 .card-text,
-      .for-who .who-container .who-card12 .card-text {
+      .for-who .who-container .who-card:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        left: 0;
+        top: 0;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        -webkit-transition: all 0.22s;
+        -moz-transition: all 0.22s;
+        -ms-transition: all 0.22s;
+        -o-transition: all 0.22s; }
+      .for-who .who-container .who-card:hover:before {
+        background: rgba(0, 0, 0, 0.4); }
+      .for-who .who-container .who-card .card-image {
+        width: 100%;
+        height: 100%;
+        z-index: 0; }
+      .for-who .who-container .who-card .card-text {
+        position: absolute;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -212,19 +213,9 @@ html {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; }
-        .for-who .who-container .who-card1 .card-text .card-text1,
-        .for-who .who-container .who-card2 .card-text .card-text1,
-        .for-who .who-container .who-card3 .card-text .card-text1,
-        .for-who .who-container .who-card4 .card-text .card-text1,
-        .for-who .who-container .who-card5 .card-text .card-text1,
-        .for-who .who-container .who-card6 .card-text .card-text1,
-        .for-who .who-container .who-card7 .card-text .card-text1,
-        .for-who .who-container .who-card8 .card-text .card-text1,
-        .for-who .who-container .who-card9 .card-text .card-text1,
-        .for-who .who-container .who-card10 .card-text .card-text1,
-        .for-who .who-container .who-card11 .card-text .card-text1,
-        .for-who .who-container .who-card12 .card-text .card-text1 {
+                align-items: center;
+        z-index: 9; }
+        .for-who .who-container .who-card .card-text .card-text1 {
           font-weight: 800;
           font-style: normal;
           font-size: 2.4rem;
@@ -233,18 +224,7 @@ html {
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #FFFFFF; }
-        .for-who .who-container .who-card1 .card-text .card-text2,
-        .for-who .who-container .who-card2 .card-text .card-text2,
-        .for-who .who-container .who-card3 .card-text .card-text2,
-        .for-who .who-container .who-card4 .card-text .card-text2,
-        .for-who .who-container .who-card5 .card-text .card-text2,
-        .for-who .who-container .who-card6 .card-text .card-text2,
-        .for-who .who-container .who-card7 .card-text .card-text2,
-        .for-who .who-container .who-card8 .card-text .card-text2,
-        .for-who .who-container .who-card9 .card-text .card-text2,
-        .for-who .who-container .who-card10 .card-text .card-text2,
-        .for-who .who-container .who-card11 .card-text .card-text2,
-        .for-who .who-container .who-card12 .card-text .card-text2 {
+        .for-who .who-container .who-card .card-text .card-text2 {
           font-weight: 800;
           font-style: normal;
           font-size: 1.5rem;
@@ -252,19 +232,6 @@ html {
           text-align: center;
           letter-spacing: 0.25em;
           color: #FFFFFF; }
-      .for-who .who-container .who-card1:hover,
-      .for-who .who-container .who-card2:hover,
-      .for-who .who-container .who-card3:hover,
-      .for-who .who-container .who-card4:hover,
-      .for-who .who-container .who-card5:hover,
-      .for-who .who-container .who-card6:hover,
-      .for-who .who-container .who-card7:hover,
-      .for-who .who-container .who-card8:hover,
-      .for-who .who-container .who-card9:hover,
-      .for-who .who-container .who-card10:hover,
-      .for-who .who-container .who-card11:hover,
-      .for-who .who-container .who-card12:hover {
-        background-blend-mode: hard-light; }
 
 .our-advantages {
   background: #8397BD;
@@ -380,18 +347,7 @@ html {
   .types-of-works .work-blocks .work-container .work-block .work-text {
     font-size: 1.8rem; }
 
-  .for-who .who-container .who-card1,
-  .for-who .who-container .who-card2,
-  .for-who .who-container .who-card3,
-  .for-who .who-container .who-card4,
-  .for-who .who-container .who-card5,
-  .for-who .who-container .who-card6,
-  .for-who .who-container .who-card7,
-  .for-who .who-container .who-card8,
-  .for-who .who-container .who-card9,
-  .for-who .who-container .who-card10,
-  .for-who .who-container .who-card11,
-  .for-who .who-container .who-card12 {
+  .for-who .who-container .who-card {
     width: 50%; }
 
   .our-advantages .advantages-discount {
@@ -500,18 +456,7 @@ html {
     font-size: 3rem;
     line-height: 3rem; }
 
-  .for-who .who-container .who-card1,
-  .for-who .who-container .who-card2,
-  .for-who .who-container .who-card3,
-  .for-who .who-container .who-card4,
-  .for-who .who-container .who-card5,
-  .for-who .who-container .who-card6,
-  .for-who .who-container .who-card7,
-  .for-who .who-container .who-card8,
-  .for-who .who-container .who-card9,
-  .for-who .who-container .who-card10,
-  .for-who .who-container .who-card11,
-  .for-who .who-container .who-card12 {
+  .for-who .who-container .who-card {
     width: 100%; }
 
   .our-advantages {
