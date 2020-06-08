@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
   const questions = document.querySelectorAll('.question'),
@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     windowClose = document.querySelector('.window-close');
 
   // Реализация аккордеона
-  questions.forEach((itemQu) => {
+  questions.forEach(function (itemQu) {
 
-    itemQu.addEventListener('click', event => {
+    itemQu.addEventListener('click', function (event) {
       event.preventDefault();
       const content = itemQu.nextElementSibling;
 
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         itemQu.classList.add('is-open');
       }
 
-      answers.forEach(itemAn => {
+      answers.forEach(function (itemAn) {
         if (itemAn !== content) {
           itemAn.style.maxHeight = null;
         }
       });
 
-      questions.forEach(item => {
+      questions.forEach(function (item) {
         if (item !== itemQu) {
           item.classList.remove('is-open');
         }
@@ -39,14 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-  
-  windowBtn.addEventListener('click', () => {
+
+  windowBtn.addEventListener('click', function () {
     window.style.display = 'block';
   });
-  windowClose.addEventListener('click', event => {
+  windowClose.addEventListener('click', function (event) {
     window.style.display = 'none';
   });
 
 });
-
-
