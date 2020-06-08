@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  'use strict';
 
   const questions = document.querySelectorAll('.question'),
     answers = document.querySelectorAll('.answer'),
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 
-
+// Реализация модального окна
   windowBtn.addEventListener('click', function () {
     window.style.display = 'block';
   });
