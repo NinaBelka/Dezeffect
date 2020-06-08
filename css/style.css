@@ -36,8 +36,6 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -69,7 +67,7 @@ html {
 
 .header-block {
   height: 100vh;
-  background: url(../img/title.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/title.jpg) right 30% center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-attachment: fixed;
   background-size: cover; }
@@ -437,7 +435,7 @@ html {
     .header-block .header-text {
       font-size: 1.5rem;
       line-height: 2.5rem;
-      padding: 20rem 0; }
+      padding: 30rem 0; }
 
   .types-of-works .work-blocks .work-container {
     width: 95%;
