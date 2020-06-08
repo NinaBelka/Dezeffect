@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-
   const questions = document.querySelectorAll('.question'),
     answers = document.querySelectorAll('.answer'),
     windowBtn = document.querySelector('.window-btn'),
@@ -46,4 +44,3 @@ document.addEventListener('DOMContentLoaded', function () {
     window.style.display = 'none';
   });
 
-});
