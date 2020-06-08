@@ -418,15 +418,17 @@ html {
     padding: 8rem 0 5rem; }
 
   .nav {
-    font-size: 1rem;
     padding: 1rem 0; }
     .nav .nav-container {
-      width: 95%; }
+      width: 98%; }
       .nav .nav-container .logo {
         width: 12rem; }
+      .nav .nav-container .menu-link {
+        margin-right: 0;
+        font-size: 1.2rem; }
       .nav .nav-container .contacts {
         margin-top: 1rem;
-        font-size: 0.8rem; }
+        font-size: 1.2rem; }
 
   .header-block {
     height: 100vh;

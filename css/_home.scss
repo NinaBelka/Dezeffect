@@ -481,19 +481,23 @@
   }
 
   .nav {
-    font-size: 1rem;
     padding: 1rem 0;
 
     .nav-container {
-      width: 95%;
+      width: 98%;
 
       .logo {
         width: 12rem;
       }
 
+      .menu-link {
+        margin-right: 0;
+        font-size: 1.2rem;
+      }
+
       .contacts {
         margin-top: 1rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
     }
   }
