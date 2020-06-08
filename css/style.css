@@ -670,10 +670,10 @@ html {
     cursor: pointer; }
     .questions-container .question:hover {
       font-size: 2.6rem; }
-    .questions-container .question::after {
+    .questions-container .question:after {
       content: url(/img/down.svg);
       margin-left: 3rem; }
-    .questions-container .question.is-open::after {
+    .questions-container .question.is-open:after {
       content: url(/img/up.svg); }
     .questions-container .question.is-open {
       background: #8397BD;
