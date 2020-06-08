@@ -435,7 +435,7 @@ html {
     .header-block .header-text {
       font-size: 2rem;
       line-height: 2.5rem;
-      padding: 20rem 0; }
+      padding: 20rem 0 15rem; }
 
   .types-of-works .work-blocks .work-container {
     width: 95%;
@@ -822,10 +822,10 @@ html {
   .header-block-d .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 3rem; }
   .header-block-d span {
     font-size: 1.5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 20rem; }
 
   .title {
     font-size: 1.8rem;
@@ -887,7 +887,7 @@ html {
     .buttons .btn {
       margin-bottom: 20px; } }
 .header-block-d1 {
-  background: url(../img/pest_control.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/pest_control.png) right no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d1 .header-text {
@@ -944,10 +944,10 @@ html {
   .header-block-d1 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 3rem; }
   .header-block-d1 span {
     font-size: 1.5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 20rem; }
 
   .title {
     font-size: 1.8rem;
@@ -969,7 +969,7 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d2 {
-  background: url(../img/deratization.png) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/deratization.png) right no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d2 .header-text {
@@ -1026,10 +1026,10 @@ html {
   .header-block-d2 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 3rem; }
   .header-block-d2 span {
     font-size: 1.5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 20rem; }
 
   .title {
     font-size: 1.8rem;
@@ -1109,10 +1109,10 @@ html {
   .header-block-d3 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 3rem; }
   .header-block-d3 span {
     font-size: 1.5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 20rem; }
 
   .title {
     font-size: 1.8rem;
@@ -1135,7 +1135,7 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d4 {
-  background: url(../img/deodorization.jpg) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/deodorization.jpg) left no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d4 .header-text {
@@ -1192,10 +1192,10 @@ html {
   .header-block-d4 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 3rem; }
   .header-block-d4 span {
     font-size: 1.5rem;
-    padding-bottom: 10rem; }
+    padding-bottom: 20rem; }
 
   .title {
     font-size: 1.8rem;
@@ -1217,7 +1217,7 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d5 {
-  background: url(../img/treatment.jpg) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
+  background: url(../img/treatment.jpg) center no-repeat rgba(0, 0, 0, 0.45);
   background-blend-mode: darken;
   background-size: cover; }
   .header-block-d5 .header-text {
@@ -1274,7 +1274,7 @@ html {
   .header-block-d5 .header-text {
     font-size: 2.2rem;
     line-height: 4rem;
-    padding: 10rem 0 3rem; }
+    padding: 20rem 0 15rem; }
   .header-block-d5 span {
     font-size: 1.5rem;
     padding-bottom: 10rem; }
