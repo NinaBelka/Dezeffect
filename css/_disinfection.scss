@@ -215,12 +215,12 @@
     }
 
     &:after {
-      content: url(/img/down.svg);
+      content: url(../img/down.svg);
       margin-left: 3rem;
     }
 
     &.is-open:after {
-      content: url(/img/up.svg);
+      content: url(../img/up.svg);
     }
 
     &.is-open {
@@ -343,9 +343,7 @@
         outline: none;
       }
     }
-
   }
-
 }
 
 
