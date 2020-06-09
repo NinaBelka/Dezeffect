@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
   const questions = document.querySelectorAll('.question'),
     answers = document.querySelectorAll('.answer'),
     windowBtn = document.querySelector('.window-btn'),
@@ -44,3 +47,4 @@
     window.style.display = 'none';
   });
 
+});
