@@ -695,7 +695,9 @@ body {
                   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
           border-radius: 5px;
           padding: 1.5rem;
-          margin-bottom: 4rem; }
+          margin-bottom: 4rem;
+          outline: none;
+          overflow: auto; }
         .services-order .services-container .order .form .form-label {
           position: absolute;
           display: inline-block;
