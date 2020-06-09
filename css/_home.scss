@@ -49,11 +49,23 @@
 
 // Титульный блок
 .header-block {
+  position: relative;
   height: 100vh;
-  background: url(../img/title.jpg) right 30% top no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
+  background: url(../img/title.jpg) right 30% top no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: -2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
 
   .header-text {
     font-weight: bold;
@@ -146,12 +158,10 @@
 // Для кого мы работаем
 .for-who {
   background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%);
-  z-index: -1;
 
   .who-container {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: wrap;
 
     .who-card {
@@ -169,8 +179,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
         left: 0;
         top: 0;
         transition: all 0.2s;
@@ -187,35 +196,33 @@
       .card-image {
         width: 100%;
         height: 100%;
-        z-index: 0;
       }
 
       .card-text {
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
         z-index: 9;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        -o-transform: translate3d(-50%, -50%, 0);
 
         .card-text1 {
-          font-weight: 800;
-          font-style: normal;
           font-size: 2.4rem;
           line-height: 3.6rem;
-          text-align: center;
-          letter-spacing: 0.25em;
           text-transform: uppercase;
-          color: #FFFFFF;
         }
 
         .card-text2 {
-          font-weight: 800;
-          font-style: normal;
           font-size: 1.5rem;
           line-height: 3rem;
-          text-align: center;
-          letter-spacing: 0.25em;
-          color: #FFFFFF;
         }
       }
     }
@@ -260,9 +267,9 @@
   }
 
   .discount {
+    position: relative;
     width: 45%;
-    background: url(../img/discount.jpg) rgba(0, 0, 0, 0.45) center center no-repeat;
-    background-blend-mode: darken;
+    background: url(../img/discount.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -270,6 +277,16 @@
     padding: 4rem 2rem 0rem 3rem;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      left: 0;
+      top: 0;
+    }
 
     .discount-title {
       font-weight: 800;
@@ -280,6 +297,7 @@
       text-transform: uppercase;
       color: #FFFFFF;
       margin-bottom: 12rem;
+      z-index: 1;
     }
 
     .discount-text {
@@ -289,6 +307,7 @@
       font-size: 2.4rem;
       line-height: 3.6rem;
       text-align: end;
+      z-index: 1;
 
       span {
         display: block;

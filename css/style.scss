@@ -44,7 +44,14 @@
 html {
   font-size: 10px;
   color: #0B445E;
+  overflow: hidden;
+  height: 100%;
 }
+body {
+  overflow: auto;
+  height: 100%;
+}
+
 
 @import "_home";
 @import "_disinfection";

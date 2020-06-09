@@ -4,11 +4,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const questions = document.querySelectorAll('.question'),
     answers = document.querySelectorAll('.answer'),
     windowBtn = document.querySelector('.window-btn'),
-    window = document.querySelector('.window'),
+    windowMod = document.querySelector('.window'),
     windowClose = document.querySelector('.window-close');
+  
+  // Реализация модального окна
+  windowBtn.addEventListener('click', function () {
+    windowMod.style.display = 'block';
+  });
+  windowClose.addEventListener('click', function (event) {
+    windowMod.style.display = 'none';
+  });
 
   // Реализация аккордеона
-  questions.forEach(function (itemQu) {
+
+  // Перевод questions и answers в Array из Node для работы в IE метода forEach
+  const questionsArr = Array.prototype.slice.call(questions);
+  const answersArr = Array.prototype.slice.call(answers);
+
+  questionsArr.forEach(function (itemQu) {
 
     itemQu.addEventListener('click', function (event) {
       event.preventDefault();
@@ -23,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
         itemQu.classList.add('is-open');
       }
 
-      answers.forEach(function (itemAn) {
+      answersArr.forEach(function (itemAn) {
         if (itemAn !== content) {
           itemAn.style.maxHeight = null;
         }
       });
 
-      questions.forEach(function (item) {
+      questionsArr.forEach(function (item) {
         if (item !== itemQu) {
           item.classList.remove('is-open');
         }
@@ -37,14 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-  });
-
-// Реализация модального окна
-  windowBtn.addEventListener('click', function () {
-    window.style.display = 'block';
-  });
-  windowClose.addEventListener('click', function (event) {
-    window.style.display = 'none';
   });
 
 });

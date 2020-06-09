@@ -23,7 +23,13 @@
 
 html {
   font-size: 10px;
-  color: #0B445E; }
+  color: #0B445E;
+  overflow: hidden;
+  height: 100%; }
+
+body {
+  overflow: auto;
+  height: 100%; }
 
 .nav {
   background: #B8D0DF;
@@ -66,11 +72,21 @@ html {
       color: #0B445E; }
 
 .header-block {
+  position: relative;
   height: 100vh;
-  background: url(../img/title.jpg) right 30% top no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
+  background: url(../img/title.jpg) right 30% top no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  z-index: -2; }
+  .header-block:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: -1; }
   .header-block .header-text {
     font-weight: bold;
     font-size: 4rem;
@@ -153,16 +169,14 @@ html {
 
 .for-who {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(79, 79, 101, 0.8)), color-stop(52.02%, #8397BD), color-stop(52.03%, #8397BD), to(#E6EAF6));
-  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%);
-  z-index: -1; }
+  background: linear-gradient(180deg, rgba(79, 79, 101, 0.8) 0%, #8397BD 52.02%, #8397BD 52.03%, #E6EAF6 100%); }
   .for-who .who-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap; }
+        flex-wrap: wrap; }
     .for-who .who-container .who-card {
       position: relative;
       width: 25%;
@@ -184,8 +198,7 @@ html {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
         left: 0;
         top: 0;
         -webkit-transition: all 0.2s;
@@ -198,38 +211,29 @@ html {
         background: rgba(0, 0, 0, 0.4); }
       .for-who .who-container .who-card .card-image {
         width: 100%;
-        height: 100%;
-        z-index: 0; }
+        height: 100%; }
       .for-who .who-container .who-card .card-text {
         position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        z-index: 9; }
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
+        z-index: 9;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        -o-transform: translate3d(-50%, -50%, 0); }
         .for-who .who-container .who-card .card-text .card-text1 {
-          font-weight: 800;
-          font-style: normal;
           font-size: 2.4rem;
           line-height: 3.6rem;
-          text-align: center;
-          letter-spacing: 0.25em;
-          text-transform: uppercase;
-          color: #FFFFFF; }
+          text-transform: uppercase; }
         .for-who .who-container .who-card .card-text .card-text2 {
-          font-weight: 800;
-          font-style: normal;
           font-size: 1.5rem;
-          line-height: 3rem;
-          text-align: center;
-          letter-spacing: 0.25em;
-          color: #FFFFFF; }
+          line-height: 3rem; }
 
 .our-advantages {
   background: #8397BD;
@@ -267,9 +271,9 @@ html {
           line-height: 2.4rem;
           margin-left: 2rem; }
   .our-advantages .discount {
+    position: relative;
     width: 45%;
-    background: url(../img/discount.jpg) rgba(0, 0, 0, 0.45) center center no-repeat;
-    background-blend-mode: darken;
+    background: url(../img/discount.jpg) center center no-repeat;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,6 +288,14 @@ html {
     -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     border-radius: 10px; }
+    .our-advantages .discount:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      left: 0;
+      top: 0; }
     .our-advantages .discount .discount-title {
       font-weight: 800;
       font-style: normal;
@@ -292,14 +304,16 @@ html {
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #FFFFFF;
-      margin-bottom: 12rem; }
+      margin-bottom: 12rem;
+      z-index: 1; }
     .our-advantages .discount .discount-text {
       font-weight: 800;
       font-style: normal;
       color: rgba(255, 255, 255, 0.8);
       font-size: 2.4rem;
       line-height: 3.6rem;
-      text-align: end; }
+      text-align: end;
+      z-index: 1; }
       .our-advantages .discount .discount-text span {
         display: block;
         font-size: 3.6rem;
@@ -498,9 +512,19 @@ html {
     color: #FFFFFF; }
 
 .header-block-d {
-  background: url(../img/disinfection.jpg) center center no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/disinfection.jpg) center center no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    left: 0;
+    top: 0;
+    z-index: -1; }
   .header-block-d .header-text {
     font-weight: 800;
     font-size: 4rem;
@@ -508,14 +532,14 @@ html {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20rem 0 3rem; }
+    padding: 30rem 0 3rem; }
   .header-block-d span {
     display: block;
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
     color: #FFFFFF;
-    padding-bottom: 20rem; }
+    padding-bottom: 30rem; }
 
 .texts {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(115, 115, 134, 0.6)), to(rgba(230, 234, 246, 0.6)));
@@ -597,6 +621,8 @@ html {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -612,6 +638,7 @@ html {
         width: 10rem;
         margin-bottom: 5rem; }
       .services .services-container .services-block .services-text {
+        max-width: 100%;
         font-weight: 300;
         font-size: 1.6rem;
         line-height: 2.4rem;
@@ -800,7 +827,14 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
     .texts .disinfection-text-container .disinfection-what {
-      margin: 0 0 5rem; } }
+      margin: 0 0 5rem; }
+
+  .services .services-container .services-block {
+    width: 45%; }
+    .services .services-container .services-block .services-icon {
+      margin-bottom: 2rem; }
+    .services .services-container .services-block .services-text {
+      margin-bottom: 3rem; } }
 @media (max-width: 768px) {
   .header-block-d .header-text {
     font-size: 2.5rem; }
@@ -810,13 +844,6 @@ html {
   .texts .disinfection-images .disinfection-image {
     width: 10rem;
     height: 10rem; }
-
-  .services .services-container .services-block {
-    width: 45%; }
-    .services .services-container .services-block .services-icon {
-      margin-bottom: 2rem; }
-    .services .services-container .services-block .services-text {
-      margin-bottom: 3rem; }
 
   .questions-container {
     width: 80%; } }
@@ -888,9 +915,19 @@ html {
     .buttons .btn {
       margin-bottom: 20px; } }
 .header-block-d1 {
-  background: url(../img/pest_control.png) right no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/pest_control.png) right no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d1:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    left: 0;
+    top: 0; }
   .header-block-d1 .header-text {
     font-weight: 800;
     font-size: 4rem;
@@ -970,9 +1007,19 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d2 {
-  background: url(../img/deratization.png) right no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/deratization.png) right no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d2:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    left: 0;
+    top: 0; }
   .header-block-d2 .header-text {
     font-weight: 800;
     font-size: 4rem;
@@ -1053,9 +1100,19 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d3 {
-  background: url(../img/ornithology.jpg) 100% 10% no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/ornithology.jpg) 100% 10% no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d3:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    left: 0;
+    top: 0; }
   .header-block-d3 .header-text {
     font-weight: 800;
     font-size: 4rem;
@@ -1136,9 +1193,19 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d4 {
-  background: url(../img/deodorization.jpg) left no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/deodorization.jpg) left no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d4:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    left: 0;
+    top: 0; }
   .header-block-d4 .header-text {
     font-weight: 800;
     font-size: 4rem;
@@ -1218,9 +1285,19 @@ html {
       -webkit-box-shadow: none;
               box-shadow: none; } }
 .header-block-d5 {
-  background: url(../img/treatment.jpg) center no-repeat rgba(0, 0, 0, 0.45);
-  background-blend-mode: darken;
-  background-size: cover; }
+  position: relative;
+  background: url(../img/treatment.jpg) center no-repeat;
+  background-size: cover;
+  z-index: -2; }
+  .header-block-d5:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    left: 0;
+    top: 0; }
   .header-block-d5 .header-text {
     font-weight: 800;
     font-size: 4rem;
