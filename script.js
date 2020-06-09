@@ -2,18 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
   const questions = document.querySelectorAll('.question'),
-    answers = document.querySelectorAll('.answer'),
-    windowBtn = document.querySelector('.window-btn'),
-    windowMod = document.querySelector('.window'),
-    windowClose = document.querySelector('.window-close');
+    answers = document.querySelectorAll('.answer');
+    // windowBtn = document.querySelector('.window-btn'),
+    // windowMod = document.querySelector('.window'),
+    // windowClose = document.querySelector('.window-close');
   
   // Реализация модального окна
-  windowBtn.addEventListener('click', function () {
-    windowMod.style.display = 'block';
-  });
-  windowClose.addEventListener('click', function (event) {
-    windowMod.style.display = 'none';
-  });
+  // windowBtn.addEventListener('click', function () {
+  //   windowMod.style.display = 'block';
+  // });
+  // windowClose.addEventListener('click', function (event) {
+  //   windowMod.style.display = 'none';
+  // });
 
   // Реализация аккордеона
 

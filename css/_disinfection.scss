@@ -104,7 +104,6 @@
       background: #B8D0DF;
       padding: 3rem;
 
-
       h2 {
         font-weight: 800;
         font-size: 1.8rem;
@@ -128,71 +127,164 @@
 }
 
 // Блок услуг
-.services {
-  background: linear-gradient(180deg, #EEF0F7 0%, #ACACB8 100%);
+.services-order {
+  background: linear-gradient(180deg, #EFF1F9 0%, #ADADB9 100%);
+  padding-bottom: 10rem;
 
   .services-container {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-between;
-    padding-bottom: 5rem;
+    margin: 0 auto;
 
-    .services-block {
-      width: 20%;
+    .services {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-right: 2rem;
+      justify-content: space-between;
+      padding-bottom: 5rem;
 
-      .services-icon {
-        width: 10rem;
-        margin-bottom: 5rem;
-      }
+      .services-block {
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
 
-      .services-text {
-        max-width: 100%;
-        font-weight: 300;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        text-align: center;
+        .services-icon {
+          width: 10rem;
+          margin-bottom: 5rem;
+        }
+
+        .services-text {
+          max-width: 100%;
+          font-weight: 300;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          text-align: center;
+        }
       }
     }
-  }
 
-  .buttons {
-    display: flex;
-    justify-content: center;
-    padding: 7rem 0 10rem;
-
-    .btn {
-      background: #B8D0DF;
-      border: 1px solid #737386;
+    .order {
+      background: #E6EAF6;
+      border: 1px solid rgba(11, 68, 94, 0.5);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #0B445E;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 1rem 2rem;
-      margin-right: 3rem;
-      cursor: pointer;
 
-      &:hover {
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+      .order-form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
 
-      &:focus {
-        outline: none;
-      }
-    }
+      .form {
+        position: relative;
+        width: 45%;
+        background: #E6EAF6;
+        border: 1px solid rgba(11, 68, 94, 0.5);
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+        padding: 3rem;
+        margin: 3rem;
 
-    .prices-btn a {
-      text-decoration: none;
-      color: #0B445E;
+        .form-title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        .form-text {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          text-align: center;
+          margin-bottom: 6rem;
+        }
+
+        .form-input {
+          display: block;
+          width: 100%;
+          align-items: center;
+          background: #E6EAF6;
+          border: 1px solid rgba(11, 68, 94, 0.5);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          padding: 1.5rem;
+          margin-bottom: 4rem;
+        }
+
+        .form-label {
+          position: absolute;
+          display: inline-block;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -o-transform: translateX(-50%) translateY(-50%);
+          padding: 0 0.5rem;
+          font-size: 1.8rem;
+          background-color: #E6EAF6;
+          color: #0B445E;
+        }
+
+        .form-btn {
+          display: block;
+          margin: 0 auto;
+          background: #CECFD9;
+          border: 1px solid rgba(11, 68, 94, 0.5);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          text-transform: uppercase;
+          padding: 1rem 2rem;
+          color: #0B445E;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          text-align: center;
+          letter-spacing: 0.1em;
+          cursor: pointer;
+        }
+      }
+
+      .form-image {
+        width: 45%;
+
+        .image {
+          max-width: 100%;
+          max-height: 60rem;
+        }
+      }
+
+      .order-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+        color: #0B445E;
+
+        .prices-btn {
+          display: block;
+          margin: 0 auto;
+          background: #CECFD9;
+          border: 1px solid rgba(11, 68, 94, 0.5);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          padding: 1rem 2rem;
+          color: #0B445E;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -263,100 +355,29 @@
 }
 
 // Модальное окно Оформить заказ
-.window {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.5);
+// .window-form {
 
-  .window-content {
-    width: 280px;
-    position: fixed;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    padding: 2rem;
-  }
+//   .btn {
+//     display: block;
+//     margin: 0 auto;
+//     background: #B8D0DF;
+//     border: 1px solid #737386;
+//     border-radius: 5px;
+//     font-size: 1.2rem;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
+//     padding: 1rem 2rem;
+//     cursor: pointer;
 
-  .window-close {
-    position: absolute;
-    top: -1.6rem;
-    right: -3rem;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
+//     &:hover {
+//       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+//     }
 
-    &:focus {
-      outline: none;
-    }
-
-  }
-
-  .window-header {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-
-  .window-text {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-
-  .window-form {
-    .window-form-input {
-      display: block;
-      width: 100%;
-      align-items: center;
-      border: 1px solid #dddddd;
-      border-radius: 5px;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-    }
-
-    .window-form-label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      font-size: 1.2rem;
-      background-color: white;
-      padding: 0 0.5rem;
-    }
-
-    .btn {
-      display: block;
-      margin: 0 auto;
-      background: #B8D0DF;
-      border: 1px solid #737386;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 1rem 2rem;
-      cursor: pointer;
-
-      &:hover {
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-}
+//     &:focus {
+//       outline: none;
+//     }
+//   }
+// }
 
 
 @media (max-width: 1200px) {
