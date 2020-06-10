@@ -176,89 +176,89 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-      }
 
-      .form {
-        position: relative;
-        width: 45%;
-        background: #E6EAF6;
-        border: 1px solid rgba(11, 68, 94, 0.5);
-        border-radius: 5px;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-        padding: 3rem;
-        margin: 3rem;
-
-        .form-title {
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 36px;
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-
-        .form-text {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 27px;
-          text-align: center;
-          margin-bottom: 6rem;
-        }
-
-        .form-input {
-          display: block;
-          width: 100%;
-          align-items: center;
+        .form {
+          position: relative;
+          width: 45%;
           background: #E6EAF6;
           border: 1px solid rgba(11, 68, 94, 0.5);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
           border-radius: 5px;
-          padding: 1.5rem;
-          margin-bottom: 4rem;
-          outline: none;
-          overflow: auto;
-        }
-
-        .form-label {
-          position: absolute;
-          display: inline-block;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
-          -webkit-transform: translateX(-50%) translateY(-50%);
-          -moz-transform: translateX(-50%) translateY(-50%);
-          -ms-transform: translateX(-50%) translateY(-50%);
-          -o-transform: translateX(-50%) translateY(-50%);
-          padding: 0 0.5rem;
-          font-size: 1.8rem;
-          background-color: #E6EAF6;
-          color: #0B445E;
-        }
-
-        .form-btn {
-          display: block;
-          margin: 0 auto;
-          background: #CECFD9;
-          border: 1px solid rgba(11, 68, 94, 0.5);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-          border-radius: 5px;
-          text-transform: uppercase;
-          padding: 1rem 2rem;
-          color: #0B445E;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 1.8rem;
-          line-height: 2.7rem;
-          text-align: center;
-          letter-spacing: 0.1em;
-          cursor: pointer;
+          padding: 3rem;
+          margin: 3rem;
+
+          .form-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            margin-bottom: 2rem;
+          }
+
+          .form-text {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            margin-bottom: 6rem;
+          }
+
+          .form-input {
+            display: block;
+            width: 100%;
+            align-items: center;
+            background: #E6EAF6;
+            border: 1px solid rgba(11, 68, 94, 0.5);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 1.5rem;
+            margin-bottom: 4rem;
+            outline: none;
+            overflow: auto;
+          }
+
+          .form-label {
+            position: absolute;
+            display: inline-block;
+            padding: 0 0.5rem;
+            font-size: 1.8rem;
+            background-color: #E6EAF6;
+            color: #0B445E;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -o-transform: translateX(-50%) translateY(-50%);
+          }
+
+          .form-btn {
+            display: block;
+            margin: 0 auto;
+            background: #CECFD9;
+            border: 1px solid rgba(11, 68, 94, 0.5);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 1rem 2rem;
+            color: #0B445E;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            text-align: center;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
         }
-      }
 
-      .form-image {
-        width: 45%;
+        .form-image {
+          width: 45%;
 
-        .image {
-          max-width: 100%;
-          max-height: 60rem;
+          .image {
+            max-width: 100%;
+            max-height: 60rem;
+          }
         }
       }
 
@@ -356,32 +356,6 @@
   }
 }
 
-// Модальное окно Оформить заказ
-// .window-form {
-
-//   .btn {
-//     display: block;
-//     margin: 0 auto;
-//     background: #B8D0DF;
-//     border: 1px solid #737386;
-//     border-radius: 5px;
-//     font-size: 1.2rem;
-//     letter-spacing: 0.1em;
-//     text-transform: uppercase;
-//     padding: 1rem 2rem;
-//     cursor: pointer;
-
-//     &:hover {
-//       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-//     }
-
-//     &:focus {
-//       outline: none;
-//     }
-//   }
-// }
-
-
 @media (max-width: 1200px) {
   .header-block-d {
     .header-text {
@@ -430,24 +404,64 @@
     }
   }
 
-  .services {
-
+  .services-order {
     .services-container {
+      .services {
+        .services-block {
+          width: 45%;
 
-      .services-block {
-        width: 45%;
+          .services-icon {
+            margin-bottom: 2rem;
+          }
 
-        .services-icon {
-          margin-bottom: 2rem;
+          .services-text {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      .order {
+        .order-form {
+          .form {
+            padding: 2rem;
+            margin: 2rem;
+
+            .form-title {
+              font-size: 18px;
+              line-height: 20px;
+              margin-bottom: 2rem;
+            }
+
+            .form-text {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 4rem;
+            }
+
+            .form-input {
+              padding: 1rem;
+              margin-bottom: 3rem;
+            }
+
+            .form-label {
+              font-size: 1.2rem;
+            }
+
+            .form-btn {
+              font-size: 1.4rem;
+            }
+          }
         }
 
-        .services-text {
-          margin-bottom: 3rem;
+        .order-buttons {
+
+          .prices-btn {
+            font-size: 1.4rem;
+          }
         }
       }
     }
   }
-
 }
 
 @media (max-width: 768px) {
@@ -472,6 +486,53 @@
       }
     }
   }
+
+  .services-order {
+    .services-container {
+      width: 90%;
+
+      .order {
+        .order-form {
+          .form {
+            padding: 1.5rem;
+            margin: 1.5rem;
+
+            .form-title {
+              font-size: 18px;
+              line-height: 20px;
+              margin-bottom: 2rem;
+            }
+
+            .form-text {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 2rem;
+            }
+
+            .form-input {
+              padding: 5px;
+              margin-bottom: 2rem;
+            }
+
+            .form-btn {
+              font-size: 1.2rem;
+              padding: 5px 10px;
+            }
+          }
+        }
+
+        .order-buttons {
+          margin-bottom: 20px;
+
+          .prices-btn {
+            font-size: 1.2rem;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
 
   .questions-container {
     width: 80%;
@@ -523,24 +584,35 @@
     }
   }
 
-  .services {
-
+  .services-order {
     .services-container {
-
-      .services-block {
-        width: 95%;
-      }
-    }
-
-    .buttons {
       width: 95%;
-      margin: 0 auto;
-      justify-content: space-between;
-      padding: 7rem 0 10rem;
+      .services {
+        .services-block {
+          width: 95%;
+        }
+      }
 
-      .btn {
-        margin-right: 0;
-        font-size: 14px;
+      .order {
+        .order-form {
+          .form {
+            width: 100%;
+          }
+          .form-image {
+            display: none;
+          }
+        }
+
+        .order-buttons {
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .prices-btn {
+            font-size: 1.2rem;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }

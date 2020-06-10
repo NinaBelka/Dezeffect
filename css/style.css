@@ -661,79 +661,79 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-      .services-order .services-container .order .form {
-        position: relative;
-        width: 45%;
-        background: #E6EAF6;
-        border: 1px solid rgba(11, 68, 94, 0.5);
-        border-radius: 5px;
-        -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-        padding: 3rem;
-        margin: 3rem; }
-        .services-order .services-container .order .form .form-title {
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 36px;
-          text-align: center;
-          margin-bottom: 2rem; }
-        .services-order .services-container .order .form .form-text {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 27px;
-          text-align: center;
-          margin-bottom: 6rem; }
-        .services-order .services-container .order .form .form-input {
-          display: block;
-          width: 100%;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+        .services-order .services-container .order .order-form .form {
+          position: relative;
+          width: 45%;
           background: #E6EAF6;
           border: 1px solid rgba(11, 68, 94, 0.5);
+          border-radius: 5px;
           -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
                   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-          border-radius: 5px;
-          padding: 1.5rem;
-          margin-bottom: 4rem;
-          outline: none;
-          overflow: auto; }
-        .services-order .services-container .order .form .form-label {
-          position: absolute;
-          display: inline-block;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
-          -webkit-transform: translateX(-50%) translateY(-50%);
-          -moz-transform: translateX(-50%) translateY(-50%);
-          -ms-transform: translateX(-50%) translateY(-50%);
-          -o-transform: translateX(-50%) translateY(-50%);
-          padding: 0 0.5rem;
-          font-size: 1.8rem;
-          background-color: #E6EAF6;
-          color: #0B445E; }
-        .services-order .services-container .order .form .form-btn {
-          display: block;
-          margin: 0 auto;
-          background: #CECFD9;
-          border: 1px solid rgba(11, 68, 94, 0.5);
-          -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-                  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-          border-radius: 5px;
-          text-transform: uppercase;
-          padding: 1rem 2rem;
-          color: #0B445E;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 1.8rem;
-          line-height: 2.7rem;
-          text-align: center;
-          letter-spacing: 0.1em;
-          cursor: pointer; }
-      .services-order .services-container .order .form-image {
-        width: 45%; }
-        .services-order .services-container .order .form-image .image {
-          max-width: 100%;
-          max-height: 60rem; }
+          padding: 3rem;
+          margin: 3rem; }
+          .services-order .services-container .order .order-form .form .form-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            margin-bottom: 2rem; }
+          .services-order .services-container .order .order-form .form .form-text {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            margin-bottom: 6rem; }
+          .services-order .services-container .order .order-form .form .form-input {
+            display: block;
+            width: 100%;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            background: #E6EAF6;
+            border: 1px solid rgba(11, 68, 94, 0.5);
+            -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 1.5rem;
+            margin-bottom: 4rem;
+            outline: none;
+            overflow: auto; }
+          .services-order .services-container .order .order-form .form .form-label {
+            position: absolute;
+            display: inline-block;
+            padding: 0 0.5rem;
+            font-size: 1.8rem;
+            background-color: #E6EAF6;
+            color: #0B445E;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -o-transform: translateX(-50%) translateY(-50%); }
+          .services-order .services-container .order .order-form .form .form-btn {
+            display: block;
+            margin: 0 auto;
+            background: #CECFD9;
+            border: 1px solid rgba(11, 68, 94, 0.5);
+            -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 1rem 2rem;
+            color: #0B445E;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            text-align: center;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            text-transform: uppercase; }
+        .services-order .services-container .order .order-form .form-image {
+          width: 45%; }
+          .services-order .services-container .order .order-form .form-image .image {
+            max-width: 100%;
+            max-height: 60rem; }
       .services-order .services-container .order .order-buttons {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -843,12 +843,32 @@ body {
     .texts .disinfection-text-container .disinfection-what {
       margin: 0 0 5rem; }
 
-  .services .services-container .services-block {
+  .services-order .services-container .services .services-block {
     width: 45%; }
-    .services .services-container .services-block .services-icon {
+    .services-order .services-container .services .services-block .services-icon {
       margin-bottom: 2rem; }
-    .services .services-container .services-block .services-text {
-      margin-bottom: 3rem; } }
+    .services-order .services-container .services .services-block .services-text {
+      margin-bottom: 3rem; }
+  .services-order .services-container .order .order-form .form {
+    padding: 2rem;
+    margin: 2rem; }
+    .services-order .services-container .order .order-form .form .form-title {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 2rem; }
+    .services-order .services-container .order .order-form .form .form-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 4rem; }
+    .services-order .services-container .order .order-form .form .form-input {
+      padding: 1rem;
+      margin-bottom: 3rem; }
+    .services-order .services-container .order .order-form .form .form-label {
+      font-size: 1.2rem; }
+    .services-order .services-container .order .order-form .form .form-btn {
+      font-size: 1.4rem; }
+  .services-order .services-container .order .order-buttons .prices-btn {
+    font-size: 1.4rem; } }
 @media (max-width: 768px) {
   .header-block-d .header-text {
     font-size: 2.5rem; }
@@ -858,6 +878,31 @@ body {
   .texts .disinfection-images .disinfection-image {
     width: 10rem;
     height: 10rem; }
+
+  .services-order .services-container {
+    width: 90%; }
+    .services-order .services-container .order .order-form .form {
+      padding: 1.5rem;
+      margin: 1.5rem; }
+      .services-order .services-container .order .order-form .form .form-title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 2rem; }
+      .services-order .services-container .order .order-form .form .form-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 2rem; }
+      .services-order .services-container .order .order-form .form .form-input {
+        padding: 5px;
+        margin-bottom: 2rem; }
+      .services-order .services-container .order .order-form .form .form-btn {
+        font-size: 1.2rem;
+        padding: 5px 10px; }
+    .services-order .services-container .order .order-buttons {
+      margin-bottom: 20px; }
+      .services-order .services-container .order .order-buttons .prices-btn {
+        font-size: 1.2rem;
+        padding: 5px 10px; }
 
   .questions-container {
     width: 80%; } }
@@ -888,18 +933,24 @@ body {
       -webkit-box-shadow: none;
               box-shadow: none; }
 
-  .services .services-container .services-block {
+  .services-order .services-container {
     width: 95%; }
-  .services .buttons {
-    width: 95%;
-    margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 7rem 0 10rem; }
-    .services .buttons .btn {
-      margin-right: 0;
-      font-size: 14px; }
+    .services-order .services-container .services .services-block {
+      width: 95%; }
+    .services-order .services-container .order .order-form .form {
+      width: 100%; }
+    .services-order .services-container .order .order-form .form-image {
+      display: none; }
+    .services-order .services-container .order .order-buttons {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 20px; }
+      .services-order .services-container .order .order-buttons .prices-btn {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        margin-bottom: 20px; }
 
   .questions-container {
     width: 95%; }
