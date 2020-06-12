@@ -344,10 +344,8 @@ body {
     font-size: 1.2rem; }
     .nav .nav-container .logo {
       width: 15rem; }
-    .nav .nav-container .links {
-      margin-top: 2rem; }
-      .nav .nav-container .links .header-link {
-        margin-right: 1rem; }
+    .nav .nav-container .links .header-link {
+      margin-right: 1rem; }
     .nav .nav-container .contacts {
       margin-top: 1rem; }
 
@@ -387,7 +385,7 @@ body {
     padding: 1rem 0; }
     .nav .logo {
       width: 15rem; }
-    .nav .links {
+    .nav .header-link {
       display: none; }
     .nav .contacts {
       margin-top: 1rem; }
