@@ -5,22 +5,27 @@
   position: fixed;
   z-index: 99;
   width: 100%;
+  text-align: center;
 
   .nav-container {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     font-size: 1.4rem;
     line-height: 2.1rem;
     padding: 1rem 0;
 
     .logo {
+      display: inline-block;
       width: 20rem;
+      margin-right: 10rem;
     }
 
     .links {
-      margin-top: 3rem;
+      display: inline-block;
+      // margin-top: 3rem;
+      vertical-align: middle;
 
       .header-link {
         margin-right: 1.8rem;
@@ -39,6 +44,7 @@
     }
 
     .contacts {
+      display: inline-block;
       text-align: right;
       margin-top: 2rem;
       font-weight: 400;
