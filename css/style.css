@@ -69,7 +69,9 @@ body {
       display: inline-block;
       text-align: right;
       font-weight: 400;
-      color: #0B445E; }
+      color: #0B445E;
+      margin-top: 2rem;
+      vertical-align: top; }
 
 .header-block {
   position: relative;
