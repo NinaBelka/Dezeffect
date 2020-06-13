@@ -8,13 +8,11 @@
   text-align: center;
 
   .nav-container {
-    // display: flex;
-    // justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    display: inline-block;
     font-size: 1.4rem;
     line-height: 2.1rem;
     padding: 1rem 0;
+    vertical-align: top;
 
     .logo {
       display: inline-block;
@@ -24,8 +22,9 @@
 
     .links {
       display: inline-block;
-      // margin-top: 3rem;
-      vertical-align: middle;
+      margin-top: 3rem;
+      vertical-align: top;
+      margin-right: 10rem;
 
       .header-link {
         margin-right: 1.8rem;
@@ -46,7 +45,6 @@
     .contacts {
       display: inline-block;
       text-align: right;
-      margin-top: 2rem;
       font-weight: 400;
       color: #0B445E;
     }
@@ -163,7 +161,8 @@
 
 // Для кого мы работаем
 .for-who {
-background: #E6EAF6;
+  background: #E6EAF6;
+
   .who-container {
     width: 100%;
     display: flex;
@@ -355,7 +354,7 @@ background: #E6EAF6;
       }
 
       .links {
-        // margin-top: 2rem;
+        margin-top: 2rem;
 
         .header-link {
           margin-right: 1rem;
@@ -425,16 +424,20 @@ background: #E6EAF6;
     font-size: 1rem;
     padding: 1rem 0;
 
-    .logo {
-      width: 15rem;
-    }
+    .nav-container {
 
-    .header-link {
-      display: none;
-    }
+      .logo {
+        width: 15rem;
+        margin-right: 20rem;
+      }
 
-    .contacts {
-      margin-top: 1rem;
+      .header-link {
+        display: none;
+      }
+
+      .contacts {
+        margin-top: 1rem;
+      }
     }
   }
 
@@ -473,7 +476,6 @@ background: #E6EAF6;
       }
     }
   }
-
 }
 
 @media (max-width: 768px) {
@@ -512,11 +514,7 @@ background: #E6EAF6;
 
       .logo {
         width: 12rem;
-      }
-
-      .menu-link {
-        margin-right: 0;
-        font-size: 1.2rem;
+        margin-right: 1rem;
       }
 
       .contacts {
