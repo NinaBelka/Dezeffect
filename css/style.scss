@@ -51,6 +51,12 @@ body {
   height: 100%;
 }
 
+button:hover,
+button:active,
+button:focus {
+  border: none
+}
+
 @import "_home";
 @import "_disinfection";
 @import "_pestControl";
