@@ -51,9 +51,8 @@ body {
       margin-right: 15rem; }
     .nav .nav-container .links {
       display: inline-block;
-      margin-top: 3rem;
-      vertical-align: top;
-      margin-right: 15rem; }
+      margin: 2.5rem 15rem 0 0;
+      vertical-align: top; }
       .nav .nav-container .links .header-link {
         position: relative;
         margin-right: 1.4rem;
@@ -440,7 +439,7 @@ body {
       width: 15rem;
       margin-right: 10rem; }
     .nav .nav-container .links {
-      margin: 2rem 10rem 0 0; }
+      margin: 1.5rem 10rem 0 0; }
       .nav .nav-container .links .header-link {
         margin-right: 1rem; }
     .nav .nav-container .contacts {
@@ -483,7 +482,6 @@ body {
     font-size: 1rem;
     padding: 1rem 0; }
     .nav .nav-container .logo {
-      width: 15rem;
       margin-right: 40rem; }
     .nav .nav-container .header-link {
       display: none; }
@@ -608,14 +606,13 @@ body {
       margin: 0 0 5rem; } }
 .nav .nav-container .logo-link {
   display: inline-block;
-  width: 20rem;
   margin-right: 15rem; }
   .nav .nav-container .logo-link .logo1 {
     display: inline-block;
     width: 20rem; }
 .nav .nav-container .menu-link {
   display: none;
-  margin: 2rem 10rem 0 0;
+  margin: 1.5rem 10rem 0 0;
   vertical-align: top;
   position: relative;
   text-decoration: none;
@@ -959,6 +956,13 @@ body {
     -o-transition: max-height 0.4s ease-in-out; }
 
 @media (max-width: 1200px) {
+  .nav .nav-container {
+    font-size: 1.2rem; }
+    .nav .nav-container .logo-link {
+      margin-right: 10rem; }
+      .nav .nav-container .logo-link .logo1 {
+        width: 15rem; }
+
   .header-block-d .header-text {
     font-size: 3.5rem; }
   .header-block-d span {
@@ -1061,11 +1065,11 @@ body {
     width: 80%; } }
 @media (max-width: 576px) {
   .nav .nav-container .logo-link {
-    margin-right: 1.5rem; }
+    margin-right: 8rem; }
+    .nav .nav-container .logo-link .logo1 {
+      width: 12rem; }
   .nav .nav-container .menu-link {
     display: none; }
-  .nav .nav-container .contacts {
-    margin-top: 2rem; }
 
   .header-block-d .header-text {
     font-size: 2.2rem;

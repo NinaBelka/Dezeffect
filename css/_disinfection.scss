@@ -3,7 +3,6 @@
 
     .logo-link {
       display: inline-block;
-      width: 20rem;
       margin-right: 15rem;
 
       .logo1 {
@@ -14,7 +13,7 @@
 
     .menu-link {
       display: none;
-      margin: 2rem 10rem 0 0;
+      margin: 1.5rem 10rem 0 0;
       vertical-align: top;
       position: relative;
       text-decoration: none;
@@ -390,6 +389,20 @@
 }
 
 @media (max-width: 1200px) {
+  .nav {
+    .nav-container {
+      font-size: 1.2rem;
+
+      .logo-link {
+        margin-right: 10rem;
+
+        .logo1 {
+          width: 15rem;
+        }
+      }
+    }
+  }
+
   .header-block-d {
     .header-text {
       font-size: 3.5rem;
@@ -604,7 +617,11 @@
   .nav {
     .nav-container {
       .logo-link {
-        margin-right: 1.5rem;
+        margin-right: 8rem;
+
+        .logo1 {
+          width: 12rem;
+        }
       }
 
       .menu-link {
@@ -612,7 +629,7 @@
       }
 
       .contacts {
-        margin-top: 2rem;
+        // margin-top: 0;
       }
     }
   }
