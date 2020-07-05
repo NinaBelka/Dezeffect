@@ -17,18 +17,18 @@
     .logo {
       display: inline-block;
       width: 20rem;
-      margin-right: 10rem;
+      margin-right: 15rem;
     }
 
     .links {
       display: inline-block;
       margin-top: 3rem;
       vertical-align: top;
-      margin-right: 10rem;
+      margin-right: 15rem;
 
       .header-link {
         position: relative;
-        margin-right: 1.8rem;
+        margin-right: 1.4rem;
         text-decoration: none;
         font-weight: 400;
         font-style: normal;
@@ -36,6 +36,10 @@
         text-transform: uppercase;
         color: #0B445E;
         cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
 
       .header-link:after {
@@ -65,7 +69,6 @@
         -ms-transform: scaleX(1);
         -o-transform: scaleX(1);
       }
-
     }
 
     .contacts {
@@ -135,7 +138,7 @@
   padding: 10rem 0 8rem;
 }
 
-.work-blocks {
+.work-content {
   background: #E6EAF6;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   margin-bottom: 10rem;
@@ -144,12 +147,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding-top: 5rem;
 
-    .work-blocks1 {
+    .work-blocks {
+      flex-basis: 48%;
       margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     .work-block {
@@ -161,7 +169,7 @@
       .work-icon {
         width: 10rem;
         height: 10rem;
-        margin-right: 4rem;
+        margin-right: 2rem;
       }
 
       .work-text {
@@ -169,7 +177,7 @@
         display: inline-block;
         font-weight: 600;
         font-style: normal;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: #0B445E;
         text-align: left;
         text-decoration: none;
@@ -249,7 +257,6 @@
     -o-transform: scaleX(1);
   }
 }
-
 
 // Для кого мы работаем
 .for-who {
@@ -443,10 +450,11 @@
 
       .logo {
         width: 15rem;
+        margin-right: 10rem;
       }
 
       .links {
-        margin-top: 2rem;
+        margin: 2rem 10rem 0 0;
 
         .header-link {
           margin-right: 1rem;
@@ -460,17 +468,25 @@
   }
 
   .types-of-works {
-    .work-blocks {
+    .work-content {
       .work-container {
-        .work-block {
-          .work-icon {
-            width: 8rem;
-            height: 8rem;
-          }
+        .work-blocks {
+          .work-block {
+            .work-icon {
+              width: 7rem;
+              height: 7rem;
+            }
 
-          .work-text {
-            font-size: 1.8rem;
+            .work-text {
+              font-size: 1.6rem;
+            }
           }
+        }
+      }
+
+      .work-text1 {
+        .work-text1-link {
+          font-size: 3.5rem;
         }
       }
     }
@@ -520,7 +536,7 @@
 
       .logo {
         width: 15rem;
-        margin-right: 20rem;
+        margin-right: 40rem;
       }
 
       .header-link {
@@ -540,52 +556,78 @@
   }
 
   .types-of-works {
-    .work-blocks {
+    .work-content {
       .work-container {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
+        width: 90%;
 
-        .work-blocks1 {
+        .work-blocks {
+          flex-direction: column;
+          align-items: center;
           margin-right: 0;
-        }
 
-        .work-block {
-          .work-icon {
-            width: 6rem;
-            height: 6rem;
+          .work-block {
+            .work-icon {
+              width: 5rem;
+              height: 5rem;
+              margin-right: 1rem;
+            }
+
+            .work-text {
+              font-size: 1.4rem;
+            }
           }
 
-          .work-text {
-            font-size: 1.8rem;
-          }
         }
       }
 
       .work-text1 {
-        font-size: 4rem;
+        .work-text1-link {
+          font-size: 2.5rem;
+        }
       }
     }
   }
 }
 
 @media (max-width: 768px) {
+  .nav {
+    font-size: 1rem;
+    padding: 1rem 0;
+
+    .nav-container {
+
+      .logo {
+        width: 15rem;
+        margin-right: 30rem;
+      }
+    }
+  }
+
   .types-of-works {
 
-    .work-container {
-      padding: 5rem 2rem 0;
+    .work-content {
 
-      .work-block {
+      .work-container {
+        width: 80%;
+        padding: 5rem 2rem 0;
+        justify-content: center;
+        align-items: center;
 
-        .work-icon {
-          width: 5rem;
-          height: 4rem;
-          margin-right: 1rem;
-        }
+        .work-blocks {
+          flex-basis: 100%;
 
-        .work-text {
-          font-size: 1.8rem;
+          .work-block {
+
+            .work-icon {
+              width: 5rem;
+              height: 4rem;
+              margin-right: 1rem;
+            }
+
+            .work-text {
+              font-size: 1.8rem;
+            }
+          }
         }
       }
     }
@@ -593,6 +635,7 @@
 }
 
 @media (max-width: 576px) {
+
   .title {
     font-size: 1.8rem;
     padding: 8rem 0 5rem;
@@ -606,11 +649,11 @@
 
       .logo {
         width: 12rem;
-        margin-right: 1rem;
+        margin-right: 10rem;
       }
 
       .contacts {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
         font-size: 1.2rem;
       }
     }
@@ -629,26 +672,31 @@
   }
 
   .types-of-works {
-    .work-blocks {
+    .work-content {
       .work-container {
-        width: 95%;
-        flex-direction: column;
+        width: 90%;
         padding: 5rem 0.5rem 0;
 
-        .work-icon {
-          width: 4rem;
-          height: 4rem;
-          margin-right: 1.5rem;
-        }
+        .work-blocks {
+          .work-block {
+            flex-direction: column;
 
-        .work-text {
-          font-size: 1.4rem;
+            .work-icon {
+              margin: 0 0 1rem;
+            }
+
+            .work-text {
+              font-size: 1.6rem;
+              text-align: center;
+            }
+          }
         }
       }
 
       .work-text1 {
-        font-size: 3rem;
-        line-height: 3rem;
+        .work-text1-link {
+          font-size: 1.8em;
+        }
       }
     }
   }
