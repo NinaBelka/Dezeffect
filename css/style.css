@@ -723,8 +723,8 @@ button:focus {
     .texts .disinfection-texts-container .disinfection-texts:last-child {
       margin-right: 0; }
     .texts .disinfection-texts-container .disinfection-texts {
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
       min-width: 45rem;
       margin-right: 2rem;
       background: #E6EAF6;
