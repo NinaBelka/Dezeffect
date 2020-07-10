@@ -742,7 +742,7 @@ button:focus {
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem; }
-      .texts .disinfection-texts-container .disinfection-texts .disinfection-text-bold {
+      .texts .disinfection-texts-container .disinfection-texts .text-bold {
         font-weight: 600; }
   .texts .services-container {
     display: -webkit-box;
@@ -785,6 +785,29 @@ button:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#EFF1F9), to(#ADADB9));
   background: linear-gradient(180deg, #EFF1F9 0%, #ADADB9 100%);
   padding: 5rem 0 15rem; }
+  .services-order .coronavirus-container {
+    background: #E6EAF6;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 10rem;
+    padding: 70px 50px; }
+    .services-order .coronavirus-container .coronavirus-title {
+      font-weight: 800;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0.25em;
+      color: #B31616;
+      margin-bottom: 3rem; }
+    .services-order .coronavirus-container .coronavirus-text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 36px;
+      color: #0B445E;
+      -webkit-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 5rem;
+              column-gap: 5rem; }
   .services-order .order-container {
     width: 80%;
     margin: 0 auto;
@@ -1001,6 +1024,11 @@ button:focus {
     .texts .services-container .services-block .services-text {
       margin-bottom: 3rem; }
 
+  .services-order .coronavirus-container .coronavirus-text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    -webkit-column-count: 1;
+            column-count: 1; }
   .services-order .order-container .order-form .form {
     padding: 2rem;
     margin: 4rem 2rem; }
@@ -1088,7 +1116,7 @@ button:focus {
     padding: 5rem 0 3rem; }
 
   .texts .disinfection-images {
-    width: 95%; }
+    width: 90%; }
     .texts .disinfection-images .disinfection-image {
       width: 5rem;
       height: 5rem;
@@ -1106,20 +1134,31 @@ button:focus {
       width: 80%;
       margin: 0 auto; }
 
-  .services-order .order-container .order-form .form {
-    width: 100%; }
-  .services-order .order-container .order-form .form-image {
-    display: none; }
-  .services-order .order-container .order-buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 20px; }
-    .services-order .order-container .order-buttons .prices-btn {
-      font-size: 1.2rem;
-      padding: 5px 10px;
+  .services-order {
+    padding-top: 0; }
+    .services-order .coronavirus-container {
+      width: 90%;
+      padding: 50px 30px; }
+      .services-order .coronavirus-container .coronavirus-title {
+        font-size: 2rem;
+        margin-bottom: 5rem; }
+      .services-order .coronavirus-container .coronavirus-text {
+        font-size: 1.6rem;
+        line-height: 2.4rem; }
+    .services-order .order-container .order-form .form {
+      width: 100%; }
+    .services-order .order-container .order-form .form-image {
+      display: none; }
+    .services-order .order-container .order-buttons {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       margin-bottom: 20px; }
+      .services-order .order-container .order-buttons .prices-btn {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        margin-bottom: 20px; }
 
   .questions-container {
     width: 95%; }
