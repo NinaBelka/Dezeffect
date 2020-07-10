@@ -1228,7 +1228,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d1 {
-  background: url(../img/pest_control1.png) no-repeat;
+  background: url(../img/pest_control1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1320,7 +1320,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d2 {
-  background: url(../img/deratization1.png) no-repeat;
+  background: url(../img/deratization1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1413,7 +1413,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d3 {
-  background: url(../img/ornithology1.png) no-repeat;
+  background: url(../img/ornithology1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1506,7 +1506,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d4 {
-  background: url(../img/deodorization1.jpg) no-repeat;
+  background: url(../img/deodorization1.jpg) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1598,7 +1598,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d5 {
-  background: url(../img/treatment1.jpg) no-repeat;
+  background: url(../img/treatment1.jpg) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
