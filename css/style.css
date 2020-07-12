@@ -772,9 +772,10 @@ button:focus {
               align-items: center;
       margin-right: 2rem; }
       .texts .services-container .services-block .services-icon {
-        width: 10rem;
+        height: 12rem;
         margin-bottom: 5rem; }
       .texts .services-container .services-block .services-text {
+        height: 8.5rem;
         max-width: 100%;
         font-weight: 300;
         font-size: 1.6rem;
