@@ -77,6 +77,11 @@
       color: #0B445E;
       margin-top: 2rem;
       vertical-align: top;
+
+      .email {
+        text-decoration: none;
+        color: #0B445E;
+      }
     }
   }
 }
@@ -85,7 +90,7 @@
 .header-block {
   position: relative;
   height: 100vh;
-  background: url(../img/title.jpg) right 30% top no-repeat;
+  background: url(../img/home/title.jpg) right 30% top no-repeat;
   background-attachment: fixed;
   background-size: cover;
   z-index: -2;
@@ -371,7 +376,7 @@
   .discount {
     position: relative;
     width: 45%;
-    background: url(../img/discount.jpg) center center no-repeat;
+    background: url(../img/home/discount.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -423,7 +428,7 @@
 
 // Наши клиенты
 .customers {
-  background: url(../img/title1.jpg) left 30% top no-repeat;
+  background: url(../img/home/title1.jpg) left 30% top no-repeat;
   background-size: cover;
   padding-bottom: 7rem;
 }

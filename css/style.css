@@ -104,11 +104,14 @@ button:focus {
       color: #0B445E;
       margin-top: 2rem;
       vertical-align: top; }
+      .nav .nav-container .contacts .email {
+        text-decoration: none;
+        color: #0B445E; }
 
 .header-block {
   position: relative;
   height: 100vh;
-  background: url(../img/title.jpg) right 30% top no-repeat;
+  background: url(../img/home/title.jpg) right 30% top no-repeat;
   background-attachment: fixed;
   background-size: cover;
   z-index: -2; }
@@ -369,7 +372,7 @@ button:focus {
   .our-advantages .discount {
     position: relative;
     width: 45%;
-    background: url(../img/discount.jpg) center center no-repeat;
+    background: url(../img/home/discount.jpg) center center no-repeat;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,7 +420,7 @@ button:focus {
         color: rgba(255, 255, 255, 0.8); }
 
 .customers {
-  background: url(../img/title1.jpg) left 30% top no-repeat;
+  background: url(../img/home/title1.jpg) left 30% top no-repeat;
   background-size: cover;
   padding-bottom: 7rem; }
 
@@ -654,10 +657,13 @@ button:focus {
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1); }
+.nav .nav-container .contacts .email {
+  text-decoration: none;
+  color: #0B445E; }
 
 .header-block-d {
   position: relative;
-  background: url(../img/disinfection.jpg) center center no-repeat;
+  background: url(../img/disinfection/disinfection.jpg) center center no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d:before {
@@ -785,7 +791,7 @@ button:focus {
 .services-order {
   background: -webkit-gradient(linear, left top, left bottom, from(#EFF1F9), to(#ADADB9));
   background: linear-gradient(180deg, #EFF1F9 0%, #ADADB9 100%);
-  padding: 5rem 0 15rem; }
+  padding: 0 0 15rem; }
   .services-order .coronavirus-container {
     background: #E6EAF6;
     border-radius: 5px;
@@ -794,7 +800,7 @@ button:focus {
     padding: 70px 50px; }
     .services-order .coronavirus-container .coronavirus-title {
       font-weight: 800;
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 3.6rem;
       letter-spacing: 0.25em;
       color: #B31616;
@@ -930,7 +936,7 @@ button:focus {
         cursor: pointer; }
 
 .questions-d {
-  background: url(../img/disinfection1.jpg) center center no-repeat;
+  background: url(../img/disinfection/disinfection1.jpg) center center no-repeat;
   background-size: cover; }
 
 .questions-container {
@@ -1186,7 +1192,7 @@ button:focus {
       margin-bottom: 20px; } }
 .header-block-d1 {
   position: relative;
-  background: url(../img/pest_control.png) right 30% top no-repeat;
+  background: url(../img/pest_control/pest_control.png) right 30% top no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d1:before {
@@ -1229,7 +1235,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d1 {
-  background: url(../img/pest_control1.png) center no-repeat;
+  background: url(../img/pest_control/pest_control1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1278,7 +1284,7 @@ button:focus {
               box-shadow: none; } }
 .header-block-d2 {
   position: relative;
-  background: url(../img/deratization.png) right no-repeat;
+  background: url(../img/deratization/deratization.png) right no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d2:before {
@@ -1321,7 +1327,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d2 {
-  background: url(../img/deratization1.png) center no-repeat;
+  background: url(../img/deratization/deratization1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1371,7 +1377,7 @@ button:focus {
               box-shadow: none; } }
 .header-block-d3 {
   position: relative;
-  background: url(../img/ornithology.jpg) 100% 10% no-repeat;
+  background: url(../img/ornithology/ornithology.jpg) 100% 10% no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d3:before {
@@ -1414,7 +1420,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d3 {
-  background: url(../img/ornithology1.png) center no-repeat;
+  background: url(../img/ornithology/ornithology1.png) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1464,7 +1470,7 @@ button:focus {
               box-shadow: none; } }
 .header-block-d4 {
   position: relative;
-  background: url(../img/deodorization.jpg) left no-repeat;
+  background: url(../img/deodorization/deodorization.jpg) left no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d4:before {
@@ -1507,7 +1513,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d4 {
-  background: url(../img/deodorization1.jpg) center no-repeat;
+  background: url(../img/deodorization/deodorization1.jpg) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {
@@ -1556,7 +1562,7 @@ button:focus {
               box-shadow: none; } }
 .header-block-d5 {
   position: relative;
-  background: url(../img/treatment.jpg) center no-repeat;
+  background: url(../img/treatment/treatment.jpg) center no-repeat;
   background-size: cover;
   z-index: -2; }
   .header-block-d5:before {
@@ -1599,7 +1605,7 @@ button:focus {
     height: 20rem; }
 
 .questions-d5 {
-  background: url(../img/treatment1.jpg) center no-repeat;
+  background: url(../img/treatment/treatment1.jpg) center no-repeat;
   background-size: cover; }
 
 @media (max-width: 992px) {

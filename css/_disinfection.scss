@@ -52,12 +52,19 @@
       -ms-transform: scaleX(1);
       -o-transform: scaleX(1);
     }
+
+    .contacts {
+      .email {
+        text-decoration: none;
+        color: #0B445E;
+      }
+    }
   }
 }
 
 .header-block-d {
   position: relative;
-  background: url(../img/disinfection.jpg) center center no-repeat;
+  background: url(../img/disinfection/disinfection.jpg) center center no-repeat;
   background-size: cover;
   z-index: -2;
 
@@ -189,12 +196,10 @@
   }
 }
 
-
-
 // Блок заказа
 .services-order {
   background: linear-gradient(180deg, #EFF1F9 0%, #ADADB9 100%);
-  padding: 5rem 0 15rem;
+  padding: 0 0 15rem;
 
   // Коронавирус
   .coronavirus-container {
@@ -206,7 +211,7 @@
 
     .coronavirus-title {
       font-weight: 800;
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 3.6rem;
       letter-spacing: 0.25em;
       color: #B31616;
@@ -353,7 +358,7 @@
 
 // Блок вопросов
 .questions-d {
-  background: url(../img/disinfection1.jpg) center center no-repeat;
+  background: url(../img/disinfection/disinfection1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -716,9 +721,11 @@
 
   .services-order {
     padding-top: 0;
+
     .coronavirus-container {
       width: 90%;
       padding: 50px 30px;
+
       .coronavirus-title {
         font-size: 2rem;
         margin-bottom: 5rem;
