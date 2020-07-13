@@ -74,14 +74,21 @@
       display: inline-block;
       text-align: right;
       font-weight: 400;
-      color: #0B445E;
       margin-top: 2rem;
       vertical-align: top;
 
       .email {
+        display: block;
         text-decoration: none;
         color: #0B445E;
       }
+
+      .tel {
+        display: block;
+        text-decoration: none;
+        color: #0B445E;
+      }
+
     }
   }
 }

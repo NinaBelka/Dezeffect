@@ -55,6 +55,13 @@
 
     .contacts {
       .email {
+        display: block;
+        text-decoration: none;
+        color: #0B445E;
+      }
+
+      .tel {
+        display: block;
         text-decoration: none;
         color: #0B445E;
       }
