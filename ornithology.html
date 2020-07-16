@@ -135,17 +135,20 @@
   <section class="services-order">
     <div class="order-container">
       <div class="order-form">
-        <form action="#" class="form">
+        <form action="mail.php" method="POST" class="form">
           <h4 class="form-title"> Заинтересовало? </h4>
           <p class="form-text"> Оставьте контактные данные для связи </p>
           <label class="form-label" for="user-name"> Ваше имя</label>
-          <input class="form-input" id="user-name" type="text">
+          <input class="form-input" id="user-name" type="text" name="user_name"
+            required>
           <label class="form-label" for="user-phone"> Номер
             телефона</label>
-          <input class="form-input" id="user-phone" type="text">
+          <input class="form-input" id="user-phone" type="text" name="user_phone"
+            required>
           <label class="form-label" for="user-message">
             Сообщение</label>
-          <textarea class="form-input" id="user-message" rows="5"></textarea>
+          <textarea class="form-input" id="user-message" rows="5" name="user_message"
+            required></textarea>
           <button class="form-btn btn" type="submit"> Отправить </button>
         </form>
         <div class="form-image">
